@@ -1,10 +1,13 @@
+import { iconsPlugin, getIconCollections } from '@egoist/tailwindcss-icons'
+
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}'
+    './app/[lng]/*.tsx',
+    './app/[lng]/**/*.tsx',
+    './components/templates/**/*.tsx',
+    './components/parts/**/*.tsx'
   ],
   theme: {
     extend: {
@@ -14,7 +17,12 @@ const config: Config = {
       }
     }
   },
-  plugins: [require('daisyui')],
+  plugins: [
+    require('daisyui'),
+    iconsPlugin({
+      collections: getIconCollections(['ion'])
+    })
+  ],
   daisyui: {
     themes: [
       {
