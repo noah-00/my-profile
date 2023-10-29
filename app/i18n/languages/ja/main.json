@@ -1,0 +1,15 @@
+{
+  "hello": "こんにちは",
+  "title": "Noah",
+  "description": "ノアのプロフィール",
+
+  "header": {
+    "name": "Ishizaka Naoya",
+    "nabs": {
+      "about": "About",
+      "experience": "Experience",
+      "work": "Work",
+      "contact": "Contact"
+    }
+  }
+}

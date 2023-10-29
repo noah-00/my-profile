@@ -1,0 +1,15 @@
+{
+  "hello": "hello world",
+  "title": "Noah",
+  "description": "Noah's profile",
+
+  "header": {
+    "name": "Noah",
+    "nabs": {
+      "about": "About",
+      "experience": "Experience",
+      "work": "Work",
+      "contact": "Contact"
+    }
+  }
+}
