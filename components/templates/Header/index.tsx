@@ -2,7 +2,7 @@ import React from 'react'
 
 import { HeaderMenuItem } from '@/components/parts/HeaderMenuItem'
 import { LngButton } from '@/components/parts/LangButton'
-import { ThemeSwitcher } from '@/components/parts/ThemeSwitcher'
+import { ThemeSwitcher } from '@/components/parts/ThemeSwitcher/client'
 
 import { useTranslation } from '@/app/i18n/index'
 
