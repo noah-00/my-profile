@@ -5,5 +5,5 @@ import { FC, PropsWithChildren } from 'react'
 import { ThemeProvider } from 'next-themes'
 
 export const Providers: FC<PropsWithChildren> = ({ children }) => {
-  return <ThemeProvider>{children}</ThemeProvider>
+  return <ThemeProvider defaultTheme="myDark">{children}</ThemeProvider>
 }
