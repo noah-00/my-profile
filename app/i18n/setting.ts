@@ -2,8 +2,8 @@ export const fallbackLng = 'en'
 export const languages = [fallbackLng, 'ja']
 export const defaultNS = 'main'
 export const labels = {
-  ja: '日本語',
-  en: 'English'
+  en: 'English',
+  ja: '日本語'
 }
 
 export function getOptions(lng = fallbackLng, ns = defaultNS) {
