@@ -4,12 +4,17 @@
   "description": "ノアのプロフィール",
 
   "header": {
-    "name": "Ishizaka Naoya",
+    "name": "Naoya Ishizaka",
     "nabs": {
       "about": "About",
       "experience": "Experience",
       "work": "Work",
       "contact": "Contact"
     }
+  },
+  "top": {
+    "introduction-1": "フロントエンドフレームワークやサーバレスアーキテクチャを利用した、スピード感のある開発を得意としています。",
+    "introduction-2": "またユーザーの体験を意識したデザインや、フィードバックに寄り添う事を意識し、ニーズに合ったサービスを提供することを心がけています。",
+    "resume": "履歴書"
   }
 }

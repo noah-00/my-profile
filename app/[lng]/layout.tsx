@@ -1,6 +1,7 @@
 import { dir } from 'i18next'
 
 import './globals.css'
+import { FixedSidebar } from '@/components/templates/FixedSidebar'
 import { Header } from '@/components/templates/Header'
 
 import { useTranslation } from '@/app/i18n/index'
@@ -34,9 +35,10 @@ type Props = {
 export default function RootLayout({ children, params: { lng } }: Props) {
   return (
     <html lang={lng} dir={dir(lng)}>
-      <body className="h-[120vh] font-mono">
+      <body className="font-mono">
         <Providers>
           <Header lng={lng} />
+          <FixedSidebar />
           {children}
         </Providers>
       </body>

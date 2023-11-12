@@ -11,5 +11,10 @@
       "work": "Work",
       "contact": "Contact"
     }
+  },
+  "top": {
+    "introduction-1": "I specialize in fast-paced development using frontend frameworks and serverless architecture.",
+    "introduction-2": "Additionally, I am committed to user-focused design and responsive to feedback, striving to provide services that cater to user needs in my work.",
+    "resume": "resume"
   }
 }
