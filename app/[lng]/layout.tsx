@@ -38,8 +38,8 @@ export default function RootLayout({ children, params: { lng } }: Props) {
       <body className="font-mono">
         <Providers>
           <Header lng={lng} />
-          <FixedSidebar />
           {children}
+          <FixedSidebar />
         </Providers>
       </body>
     </html>
