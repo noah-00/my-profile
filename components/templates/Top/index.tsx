@@ -16,7 +16,7 @@ export const Top = async (props: TypeProps) => {
   )
 
   return (
-    <div className="h-[85vh] flex justify-center items-center stack">
+    <div className="h-[95vh] md:h-[90vh] flex justify-center items-center stack">
       <div className="space-y-3">
         {renderText(0.5, <p className="text-primary">Hi, my name is</p>)}
         {renderText(0.6, <h1 className="text-[60px] font-bold text-secondary">Naoya Ishizaka</h1>)}
