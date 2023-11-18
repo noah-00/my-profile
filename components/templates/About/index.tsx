@@ -17,20 +17,28 @@ export const About = (props: Props) => {
         <SectionTitle title="About" index="01" />
       </MotionFadeInFromBottomWithScroll>
       <MotionFadeInFromBottomWithScroll>
-        <Window>
-          <div className="flex justify-center">
-            <Image className="mask mask-circle" alt="me" src={myPicture} height="140" width="140" />
-          </div>
-          <div className="md:m-0 mt-6">
-            <h2 className="text-[30px] text-secondary font-bold">Naoya Ishizaka</h2>
-            <h3>Digital Craftsman ( Developer / Designer )</h3>
-            <p className="mt-10">
-              test test test test test test test test test test test test test test test test test
-              test test test test test test test test test test test test test test test test test
-              test
-            </p>
-          </div>
-        </Window>
+        <div className="md:px-8">
+          <Window>
+            <div className="flex justify-center">
+              <Image
+                className="mask mask-circle"
+                alt="me"
+                src={myPicture}
+                height="140"
+                width="140"
+              />
+            </div>
+            <div className="md:m-0 mt-6">
+              <h2 className="text-[30px] text-secondary font-bold">Naoya Ishizaka</h2>
+              <h3>Digital Craftsman ( Developer / Designer )</h3>
+              <p className="mt-10">
+                test test test test test test test test test test test test test test test test test
+                test test test test test test test test test test test test test test test test test
+                test
+              </p>
+            </div>
+          </Window>
+        </div>
       </MotionFadeInFromBottomWithScroll>
     </>
   )
