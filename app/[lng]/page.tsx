@@ -1,5 +1,6 @@
 import { About } from '@/components/templates/About'
 import { Experience } from '@/components/templates/Experience'
+import { Portfolio } from '@/components/templates/Portfolio'
 import { Top } from '@/components/templates/Top'
 
 export default async function Home({ params: { lng } }: { params: { lng: string } }) {
@@ -8,6 +9,7 @@ export default async function Home({ params: { lng } }: { params: { lng: string 
       <Top lng={lng} />
       <About lng={lng} />
       <Experience lng={lng} />
+      <Portfolio lng={lng} />
     </div>
   )
 }
