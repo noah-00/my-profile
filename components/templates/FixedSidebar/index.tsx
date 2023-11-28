@@ -2,11 +2,7 @@ import React from 'react'
 
 import { MotionFadeInFromTop } from '@/components/motion/MotionFadeInFromTop'
 
-const links = [
-  { icon: 'i-ion-logo-github', link: '#' },
-  { icon: 'i-ion-logo-linkedin', link: '#' },
-  { icon: 'i-ion-mail', link: '#' }
-]
+import { links } from '@/utils/MtData'
 
 export const FixedSidebar = () => {
   return (
