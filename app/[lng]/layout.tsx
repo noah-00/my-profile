@@ -2,6 +2,7 @@ import { dir } from 'i18next'
 
 import './globals.css'
 import { FixedSidebar } from '@/components/templates/FixedSidebar'
+import { Footer } from '@/components/templates/Footer'
 import { Header } from '@/components/templates/Header'
 
 import { useTranslation } from '@/app/i18n/index'
@@ -39,6 +40,7 @@ export default function RootLayout({ children, params: { lng } }: Props) {
         <Providers>
           <Header lng={lng} />
           {children}
+          <Footer lng={lng} />
           <FixedSidebar />
         </Providers>
       </body>
