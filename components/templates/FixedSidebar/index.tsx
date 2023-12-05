@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 
 import { MotionFadeInFromTop } from '@/components/motion/MotionFadeInFromTop'
@@ -10,7 +12,7 @@ export const FixedSidebar = () => {
       {links.map((link) => (
         <MotionFadeInFromTop key={link.icon} delay={1.5}>
           <div className="grid rounded place-content-center">
-            <a className="link">
+            <a className="link" href={link.link} target="_blank">
               <div className={`h-6 w-6 hover:bg-primary ${link.icon}`}></div>
             </a>
           </div>

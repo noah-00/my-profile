@@ -6,7 +6,6 @@ export const HeaderMenuSet = [
 ]
 
 export const links = [
-  { icon: 'i-ion-logo-github', link: '#' },
-  { icon: 'i-ion-logo-linkedin', link: '#' },
-  { icon: 'i-ion-mail', link: '#' }
+  { icon: 'i-ion-logo-github', link: 'https://github.com/noah-00' },
+  { icon: 'i-ion-logo-linkedin', link: 'https://www.linkedin.com/in/naoya-ishizaka-a1898a292/' }
 ]
