@@ -2,42 +2,35 @@ import { MotionFadeInFromBottomWithScroll } from '@/components/motion/MotionFade
 import { PortfolioItem } from '@/components/parts/PortfolioItem'
 import { SectionTitle } from '@/components/parts/SectionTitle'
 
+import { useTranslation } from '@/app/i18n/index'
+
 type Props = {
   lng: string
 }
 
 import AnkiQuikcer from '@/public/images/AnkiQuikcer.png'
 
-const portfolioItems = [
-  {
-    subTitle: 'Google extension',
-    title: 'Anki Quicker',
-    description:
-      'Anki Quicker is a Google Chrome extension that allows you to quickly add cards to Anki.',
-    image: AnkiQuikcer,
-    technologies: ['TypeScript', 'React', 'Next.js', 'Tailwind', 'Anki-Connect-API'],
-    github: '#',
-    demo: '#'
-  }
-]
+const portfolioItemsObImage = [AnkiQuikcer]
 
 export const Portfolio = async (props: Props) => {
+  const { t } = await useTranslation(props.lng, 'main')
+
   return (
     <>
       <MotionFadeInFromBottomWithScroll>
         <SectionTitle title="Portfolio" index="03" />
       </MotionFadeInFromBottomWithScroll>
-      {portfolioItems.map((item, index) => {
+      {portfolioItemsObImage.map((image, index) => {
         return (
           <MotionFadeInFromBottomWithScroll key={index}>
             <PortfolioItem
-              subTitle={item.subTitle}
-              title={item.title}
-              description={item.description}
-              image={item.image}
-              technologies={item.technologies}
-              github={item.github}
-              demo={item.demo}
+              subTitle={t(`portfolio.items.${index}.subTitle`)}
+              title={t(`portfolio.items.${index}.title`)}
+              description={t(`portfolio.items.${index}.description`)}
+              image={image}
+              technologies={t(`portfolio.items.${index}.technologies`)}
+              github={t(`portfolio.items.${index}.github`)}
+              demo={t(`portfolio.items.${index}.demo`)}
             />
           </MotionFadeInFromBottomWithScroll>
         )

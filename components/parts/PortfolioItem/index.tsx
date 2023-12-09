@@ -5,7 +5,7 @@ type Props = {
   title: string
   description: string
   image: StaticImageData
-  technologies: string[]
+  technologies: string
   github: string
   demo: string
 }
@@ -19,11 +19,9 @@ export const PortfolioItem = (props: Props) => {
           <div className="w-full p-1 absolute -left-10 -top-4 text-right space-y-5">
             <p className="text-primary text-sm">{props.subTitle}</p>
             <h2 className="text-2xl text-secondary font-bold">{props.title}</h2>
-            <div className="p-2 rounded-md border-primary border-r-4 bg-base-100">
-              {props.description}
-            </div>
+            <div className="p-2 rounded-md bg-base-100">{props.description}</div>
             <div className="text-sm space-x-2 space-y-2">
-              {props.technologies.map((technology, index) => {
+              {props.technologies.split(',').map((technology, index) => {
                 return (
                   <span key={index} className="badge">
                     {technology}
@@ -48,9 +46,9 @@ export const PortfolioItem = (props: Props) => {
           <div className="p-1 space-y-5">
             <p className="text-primary text-sm">{props.subTitle}</p>
             <h2 className="text-2xl text-secondary font-bold">{props.title}</h2>
-            <div className="p-4 rounded-md border-primary border-l-4">{props.description}</div>
+            <div className="p-4 rounded-md">{props.description}</div>
             <div className="text-sm space-x-2 space-y-2">
-              {props.technologies.map((technology, index) => {
+              {props.technologies.split(',').map((technology, index) => {
                 return (
                   <span key={index} className="badge">
                     {technology}
