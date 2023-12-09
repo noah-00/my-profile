@@ -20,7 +20,7 @@ const config: Config = {
   plugins: [
     require('daisyui'),
     iconsPlugin({
-      collections: getIconCollections(['ion', 'nonicons', 'fa6-brands', 'clarity'])
+      collections: getIconCollections(['ion', 'nonicons', 'fa6-brands', 'clarity', 'akar-icons'])
     })
   ],
   daisyui: {

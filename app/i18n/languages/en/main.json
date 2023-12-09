@@ -16,5 +16,17 @@
     "introduction-1": "I am skilled in developing web applications, with a focus on front-end technologies.",
     "introduction-2": "In addition, I have experience in developing back-end APIs and building serverless architectures on AWS. ",
     "resume": "resume"
+  },
+  "about": {
+    "information": {
+      "yearsOfExperienceLabel": "Experience",
+      "yearsOfExperience": "2020/06 ~ present",
+      "typeOfOccupationLabel": "Occupation",
+      "typeOfOccupation": "Front-End/Back-End/Cloud(AWS) developer",
+      "skillsLabel": "Languages",
+      "skills": "React.js, Next.js, Vue.js, Nuxt.js, JavaScript, TypeScript, HTML, CSS, Node.js, Express.js, Python, FastAPI, Terraform, MongoDB, DynamoDB, GraphQL, other AWS services",
+      "hobbyLabel": "Hobbies",
+      "hobby": "Sauna, Camping, Basketball"
+    }
   }
 }
