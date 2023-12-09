@@ -41,5 +41,11 @@
         "demo": "https://chromewebstore.google.com/detail/anki-quicker/bkffcipebmidpcbhipmblnpmoaofdinh?hl=ja"
       }
     ]
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "content": "ご質問などございましたら、お気軽にお問い合わせください。",
+    "content-2": "できる限り迅速に返信させていただきます！",
+    "button": "Say hello"
   }
 }

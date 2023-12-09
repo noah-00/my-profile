@@ -41,5 +41,11 @@
         "demo": "https://chromewebstore.google.com/detail/anki-quicker/bkffcipebmidpcbhipmblnpmoaofdinh?hl=en"
       }
     ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "content": "I’m  currently looking for new opportunities.",
+    "content-2": "If you have a question or just want to say hi, don't hesitate to email me. I’ll try my best to get back to you!",
+    "button": "Say hello"
   }
 }
