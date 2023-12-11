@@ -42,6 +42,92 @@
       }
     ]
   },
+  "experience": {
+    "items": {
+      "TDC": {
+        "year": "2023/09 ~ ",
+        "title": "TDCソフト 株式会社",
+        "description": "フルスタックエンジニアとして、自社向けのアプリ開発や、お客様から受注を受けてアプリ開発をさせて頂いております。",
+        "projectsCount": "2",
+        "projects": [
+          {
+            "title": "異常機器検知アプリ新規開発",
+            "year": "2023/09 ~",
+            "description": "製油所で使用されいてる、精油精製の機械の故障を防ぐため異常検知アプリ開発",
+            "techStackKeys": "TS,NEXT,PYTHON,FASTAPI,AWS"
+          },
+          {
+            "title": "Jira拡張アプリ開発",
+            "year": "2023/09 ~ 2023/11",
+            "description": "社内向けに、Jiraの単純作業を効率化できる拡張機能のアプリ開発",
+            "techStackKeys": "REACT,TS"
+          }
+        ]
+      },
+      "AWSSAA": {
+        "year": "2023/06",
+        "title": "AWS SAA 取得",
+        "description": "業務でAWSに触れる機会が多く、知識を深めるためにAWS Certified Solutions Architect - Associate - C03を取得しました。",
+        "projectsCount": "0",
+        "projects": []
+      },
+      "PHILIPPINES": {
+        "year": "2022/10 ~ 2023/04",
+        "title": "フィリピン",
+        "description": "語学力向上・異文化に触れる事を目的にフィリピンに6ヶ月ほど留学をしていました。",
+        "projects": []
+      },
+      "WINOO": {
+        "year": "2020/06 ~ 2022/08",
+        "title": "Winoo株式会社",
+        "description": "フルスタックエンジニアとして、お客様から受注を受けて、アプリ開発をさせて頂いておりました。",
+        "projectsCount": "1",
+        "projects": [
+          {
+            "title": "パブリックDMP(データマネジメントプラットフォーム) 新規開発",
+            "year": "2020/06 ~ 2022/08",
+            "description": "企業が自社の顧客データを効果的に活用し、新規顧客獲得や既存顧客のロイヤリティ向上に貢献するための、様々なグラフを用いたデータマネジメントプラットフォーム",
+            "techStackKeys": "VUE,TS,NODE,AWS"
+          }
+        ]
+      },
+      "SELFSTUDY": {
+        "year": "2020/01 ~ 2020/05",
+        "title": "アプリ開発独学期間",
+        "description": "Web開発に必要な基礎知識から、Ruby on RailsやAWSを用いた複合的機能の企画・実装を行いました。",
+        "projectsCount": "1",
+        "projects": [
+          {
+            "title": "学んだ技術",
+            "year": "2020/01 ~ 2020/05",
+            "description": "基礎知識〜下記の技術を集中的に学んでおりました。当時は、1日12時間以上は学習に充てていました。",
+            "techStackKeys": "HTML,CSS,JS,TS,JQUERY,VUE,GIT,GITHUB,NODE,RUBY,RAILS,MYSQL,LINUX,DOCKER,AWS"
+          }
+        ]
+      },
+      "HAIRDRESSER": {
+        "year": "2018/04 ~ 2020/01",
+        "title": "有限会社 マツモト",
+        "description": "美容師・アシスタントとして、お客様のヘアスタイルを提案し、施術を行っておりました。",
+        "projectsCount": "0",
+        "projects": []
+      },
+      "BEAUTYSCHOOL": {
+        "year": "2016/04 ~ 2018/03",
+        "title": "東京美容専門学校",
+        "description": "美容師免許取得のために、美容専門学校に通っておりました。",
+        "projectsCount": "0",
+        "projects": []
+      },
+      "HIGHSCHOOL": {
+        "year": "2013/04 ~ 2016/03",
+        "title": "神奈川県立相模田名高等学校",
+        "description": "普通科を卒業。部活動はバスケットボール部に所属しており、キャプテンを務めておりました。地区大会で優勝の経験もあります。",
+        "projectsCount": "0",
+        "projects": []
+      }
+    }
+  },
   "contact": {
     "title": "お問い合わせ",
     "content": "ご質問などございましたら、お気軽にお問い合わせください。",
