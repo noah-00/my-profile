@@ -104,27 +104,6 @@
             "techStackKeys": "HTML,CSS,JS,TS,JQUERY,VUE,GIT,GITHUB,NODE,RUBY,RAILS,MYSQL,LINUX,DOCKER,AWS"
           }
         ]
-      },
-      "HAIRDRESSER": {
-        "year": "2018/04 ~ 2020/01",
-        "title": "有限会社 マツモト",
-        "description": "美容師・アシスタントとして、お客様のヘアスタイルを提案し、施術を行っておりました。",
-        "projectsCount": "0",
-        "projects": []
-      },
-      "BEAUTYSCHOOL": {
-        "year": "2016/04 ~ 2018/03",
-        "title": "東京美容専門学校",
-        "description": "美容師免許取得のために、美容専門学校に通っておりました。",
-        "projectsCount": "0",
-        "projects": []
-      },
-      "HIGHSCHOOL": {
-        "year": "2013/04 ~ 2016/03",
-        "title": "神奈川県立相模田名高等学校",
-        "description": "普通科を卒業。部活動はバスケットボール部に所属しており、キャプテンを務めておりました。地区大会で優勝の経験もあります。",
-        "projectsCount": "0",
-        "projects": []
       }
     }
   },

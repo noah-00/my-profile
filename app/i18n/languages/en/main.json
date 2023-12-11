@@ -105,27 +105,6 @@
             "techStackKeys": "HTML,CSS,JS,TS,JQUERY,VUE,GIT,GITHUB,NODE,RUBY,RAILS,MYSQL,LINUX,DOCKER,AWS"
           }
         ]
-      },
-      "HAIRDRESSER": {
-        "year": "2018/04 ~ 2020/01",
-        "title": "Matsumoto Ltd.",
-        "description": "Worked as a hairdresser and assistant, providing hair styling and treatment services to customers.",
-        "projectsCount": "0",
-        "projects": []
-      },
-      "BEAUTYSCHOOL": {
-        "year": "2016/04 ~ 2018/03",
-        "title": "Tokyo Beauty Academy",
-        "description": "Attended beauty school to obtain my hairdressing license.",
-        "projectsCount": "0",
-        "projects": []
-      },
-      "HIGHSCHOOL": {
-        "year": "2013/04 ~ 2016/03",
-        "title": "Kanagawa Prefectural Sagamidai High School",
-        "description": "Graduated from the general education program. I was a member and captain of the basketball team, leading us to a district championship.",
-        "projectsCount": "0",
-        "projects": []
       }
     }
   },

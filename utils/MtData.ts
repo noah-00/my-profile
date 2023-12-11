@@ -13,16 +13,7 @@ export const SNS_LINKS = [
   { icon: 'i-ion-logo-github', link: 'https://github.com/noah-00' }
 ]
 
-export const TIME_LINE_ITEM_KEYS = [
-  'TDC',
-  'AWSSAA',
-  'PHILIPPINES',
-  'WINOO',
-  'SELFSTUDY',
-  'HAIRDRESSER',
-  'BEAUTYSCHOOL',
-  'HIGHSCHOOL'
-]
+export const TIME_LINE_ITEM_KEYS = ['TDC', 'AWSSAA', 'PHILIPPINES', 'WINOO', 'SELFSTUDY']
 
 export const TECH_STACKS: { [key: string]: { name: string; icon: string } } = {
   VUE: { name: 'Vue.js', icon: 'i-mdi-vuejs' },
