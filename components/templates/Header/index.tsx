@@ -17,12 +17,13 @@ type LngButtonProps = {
 export const Header = async ({ lng }: LngButtonProps) => {
   const { t } = await useTranslation(lng)
 
-  // TODO: add function scroll to section
   return (
     <div className="navbar sticky top-0 z-30 bg-base-100 bg-opacity-90">
       <div className="navbar-start">
         <MotionFadeIn>
-          <a className="btn btn-ghost normal-case text-xl">{t('header.name')}</a>
+          <a className="btn btn-ghost normal-case text-xl" href="/">
+            {t('header.name')}
+          </a>
         </MotionFadeIn>
       </div>
       <div className="navbar-center hidden lg:flex">

@@ -14,7 +14,7 @@ export const Experience = async (props: Props) => {
   const { t } = await useTranslation(props.lng, 'main')
 
   return (
-    <>
+    <section id="Experience">
       <MotionFadeInFromBottomWithScroll>
         <SectionTitle title="Experience" index="02" />
       </MotionFadeInFromBottomWithScroll>
@@ -36,6 +36,6 @@ export const Experience = async (props: Props) => {
           })}
         </ul>
       </MotionFadeInFromBottomWithScroll>
-    </>
+    </section>
   )
 }

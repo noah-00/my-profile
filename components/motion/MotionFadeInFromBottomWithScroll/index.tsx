@@ -21,7 +21,7 @@ export const MotionFadeInFromBottomWithScroll = (props: Props) => {
   }, [])
 
   useEffect(() => {
-    isInView && mainControls.start({ opacity: 1, y: 0, transition: { delay: 0.4, duration: 0.3 } })
+    isInView && mainControls.start({ opacity: 1, y: 0, transition: { delay: 0.3, duration: 0.3 } })
   }, [isInView])
 
   return (

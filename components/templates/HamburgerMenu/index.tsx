@@ -15,20 +15,20 @@ export const HamburgerMenu = async (props: TypeProps) => {
 
   return (
     <div className="drawer drawer-end p-0 m-0">
-      <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
+      <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <label
         className="btn btn-outline btn-primary flex items-center flex-nowrap px-3"
-        htmlFor="my-drawer-4"
+        htmlFor="my-drawer"
       >
         <div className="i-ion-menu h-5 w-5"></div>
       </label>
 
       <div className="drawer-side">
-        <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
+        <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
         <ul className="menu w-80 min-h-full bg-base-200 text-base-content pt-6">
           <label
             className="btn btn-square btn-outline btn-primary self-end mx-3 mb-3"
-            htmlFor="my-drawer-4"
+            htmlFor="my-drawer"
           >
             <div className="i-ion-close h-5 w-5"></div>
           </label>
