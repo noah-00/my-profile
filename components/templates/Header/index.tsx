@@ -8,7 +8,7 @@ import { ThemeSwitcher } from '@/components/parts/ThemeSwitcher'
 import { HamburgerMenu } from '@/components/templates/HamburgerMenu'
 
 import { useTranslation } from '@/app/i18n/index'
-import { HeaderMenuSet } from '@/utils/MtData'
+import { HEADER_MENU } from '@/utils/MtData'
 
 type LngButtonProps = {
   lng: string
@@ -27,7 +27,7 @@ export const Header = async ({ lng }: LngButtonProps) => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal">
-          {HeaderMenuSet.map((item, index) => {
+          {HEADER_MENU.map((item, index) => {
             return (
               <MotionFadeInFromTop key={item} delay={index / 10}>
                 <HeaderMenuItem label={t(item)} index={index + 1} />

@@ -4,12 +4,12 @@ import React from 'react'
 
 import { MotionFadeInFromTop } from '@/components/motion/MotionFadeInFromTop'
 
-import { links } from '@/utils/MtData'
+import { SNS_LINKS } from '@/utils/MtData'
 
 export const FixedSidebar = () => {
   return (
     <div className="fixed left-16 bottom-0 space-y-4 hidden md:block">
-      {links.map((link) => (
+      {SNS_LINKS.map((link) => (
         <MotionFadeInFromTop key={link.icon} delay={1.5}>
           <div className="grid rounded place-content-center">
             <a className="link" href={link.link} target="_blank">

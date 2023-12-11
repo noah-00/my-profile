@@ -4,7 +4,7 @@ import { HeaderMenuItem } from '@/components/parts/HeaderMenuItem'
 
 import { useTranslation } from '@/app/i18n/index'
 import { labels } from '@/app/i18n/setting'
-import { HeaderMenuSet } from '@/utils/MtData'
+import { HEADER_MENU } from '@/utils/MtData'
 
 type TypeProps = {
   lng: string
@@ -32,7 +32,7 @@ export const HamburgerMenu = async (props: TypeProps) => {
           >
             <div className="i-ion-close h-5 w-5"></div>
           </label>
-          {HeaderMenuSet.map((item, index) => {
+          {HEADER_MENU.map((item, index) => {
             return <HeaderMenuItem label={t(item)} index={index + 1} key={item} />
           })}
           <div className="divider"></div>

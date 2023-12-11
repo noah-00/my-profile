@@ -1,11 +1,11 @@
-export const HeaderMenuSet = [
+export const HEADER_MENU = [
   'header.nabs.about',
   'header.nabs.experience',
   'header.nabs.portfolio',
   'header.nabs.contact'
 ]
 
-export const links = [
+export const SNS_LINKS = [
   {
     icon: 'i-mdi-linkedin',
     link: 'https://www.linkedin.com/in/naoya-ishizaka-a1898a292/'
