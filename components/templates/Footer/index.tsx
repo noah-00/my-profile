@@ -1,5 +1,3 @@
-import { SNS_LINKS } from '@/utils/MtData'
-
 export const Footer = () => {
   return (
     <footer className="footer footer-center p-10 bg-base-300 mt-20">
@@ -8,13 +6,21 @@ export const Footer = () => {
       </aside>
       <nav>
         <div className="grid grid-flow-col gap-4">
-          {SNS_LINKS.map((link) => (
-            <div className="grid rounded place-content-center" key={link.link}>
-              <a className="link">
-                <div className={`h-6 w-6 bg-primary hover:bg-secondary ${link.icon}`}></div>
-              </a>
-            </div>
-          ))}
+          <div className="grid rounded place-content-center">
+            <a className="link" href="https://www.linkedin.com/in/naoya-ishizaka-a1898a292/">
+              <div className="h-6 w-6 bg-primary hover:bg-secondary i-ion-logo-linkedin"></div>
+            </a>
+          </div>
+          <div className="grid rounded place-content-center">
+            <a className="link" href="https://github.com/noah-00">
+              <div className="h-6 w-6 bg-primary hover:bg-secondary i-ion-logo-github"></div>
+            </a>
+          </div>
+          <div className="grid rounded place-content-center">
+            <a className="link" href="#">
+              <div className="h-6 w-6 bg-primary hover:bg-secondary i-ion-document-text"></div>
+            </a>
+          </div>
         </div>
       </nav>
     </footer>

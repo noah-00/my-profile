@@ -5,14 +5,6 @@ export const HEADER_MENU = [
   'header.nabs.contact'
 ]
 
-export const SNS_LINKS = [
-  {
-    icon: 'i-mdi-linkedin',
-    link: 'https://www.linkedin.com/in/naoya-ishizaka-a1898a292/'
-  },
-  { icon: 'i-ion-logo-github', link: 'https://github.com/noah-00' }
-]
-
 export const TIME_LINE_ITEM_KEYS = ['TDC', 'AWSSAA', 'PHILIPPINES', 'WINOO', 'SELFSTUDY']
 
 export const TECH_STACKS: { [key: string]: { name: string } } = {
