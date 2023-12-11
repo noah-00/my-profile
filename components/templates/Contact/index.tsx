@@ -39,6 +39,7 @@ export const Contact = async (props: Props) => {
                 {t('contact.content-2')}
               </p>
               <button onClick={handleEmail} className="btn btn-primary btn-outline">
+                <span className="h-4 w-4 i-ion-mail"></span>
                 {t('contact.button')}
               </button>
             </div>
