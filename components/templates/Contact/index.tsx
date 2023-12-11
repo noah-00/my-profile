@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 
 import Image from 'next/image'
@@ -7,6 +9,7 @@ import { SectionTitle } from '@/components/parts/SectionTitle'
 
 import { useTranslation } from '@/app/i18n/index'
 import myPicture from '@/public/images/me.png'
+import { MAIL_ADDRESS } from '@/utils/MtData'
 
 type Props = {
   lng: string
@@ -14,6 +17,10 @@ type Props = {
 
 export const Contact = async (props: Props) => {
   const { t } = await useTranslation(props.lng, 'main')
+
+  const handleEmail = () => {
+    window.location.href = `mailto:${MAIL_ADDRESS}`
+  }
 
   return (
     <section id="Contact">
@@ -31,7 +38,9 @@ export const Contact = async (props: Props) => {
                 <br />
                 {t('contact.content-2')}
               </p>
-              <button className="btn btn-primary btn-outline">{t('contact.button')}</button>
+              <button onClick={handleEmail} className="btn btn-primary btn-outline">
+                {t('contact.button')}
+              </button>
             </div>
           </div>
         </div>

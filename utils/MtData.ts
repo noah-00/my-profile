@@ -39,3 +39,5 @@ export const TECH_STACKS: { [key: string]: { name: string } } = {
   DOCKER: { name: 'Docker' },
   JS: { name: 'JavaScript' }
 }
+
+export const MAIL_ADDRESS = 'ni.000.000.000.011@gmail.com'
