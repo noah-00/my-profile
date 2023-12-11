@@ -32,13 +32,7 @@ export const Accordion = (props: Props) => {
         <div className="my-6">{props.description}</div>
         <div>
           {props.techStackKeys.split(',').map((key) => {
-            return (
-              <TechBadge
-                name={TECH_STACKS[key].name}
-                icon={TECH_STACKS[key].icon}
-                key={TECH_STACKS[key].name}
-              />
-            )
+            return <TechBadge name={TECH_STACKS[key].name} key={TECH_STACKS[key].name} />
           })}
         </div>
       </div>

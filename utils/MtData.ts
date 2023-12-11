@@ -15,34 +15,27 @@ export const SNS_LINKS = [
 
 export const TIME_LINE_ITEM_KEYS = ['TDC', 'AWSSAA', 'PHILIPPINES', 'WINOO', 'SELFSTUDY']
 
-export const TECH_STACKS: { [key: string]: { name: string; icon: string } } = {
-  VUE: { name: 'Vue.js', icon: 'i-mdi-vuejs' },
-  TS: { name: 'TypeScript', icon: 'i-mdi-language-typescript' },
-  NUXT: { name: 'Nuxt.js', icon: 'i-mdi-nuxt' },
-  AWS: { name: 'AWS', icon: 'i-mdi-aws' },
-  REACT: { name: 'React', icon: 'i-mdi-react' },
-  PYTHON: { name: 'Python', icon: 'i-mdi-language-python' },
-  NEXT: { name: 'Next.js', icon: 'i-mdi-nextjs' },
-  FASTAPI: { name: 'FastAPI', icon: 'i-mdi-fastapi' },
-  NODE: { name: 'Node.js', icon: 'i-mdi-nodejs' },
-  EXPRESS: { name: 'Express', icon: 'i-mdi-express' },
-  JQUERY: { name: 'jQuery', icon: 'i-mdi-jquery' },
-  HTML: { name: 'HTML', icon: 'i-mdi-language-html5' },
-  CSS: { name: 'CSS', icon: 'i-mdi-language-css3' },
-  SASS: { name: 'Sass', icon: 'i-mdi-sass' },
-  GIT: { name: 'Git', icon: 'i-mdi-git' },
-  GITHUB: { name: 'GitHub', icon: 'i-mdi-github' },
-  RUBY: { name: 'Ruby', icon: 'i-mdi-language-ruby' },
-  RAILS: { name: 'Ruby on Rails', icon: 'i-mdi-rails' },
-  MYSQL: { name: 'MySQL', icon: 'i-mdi-mysql' },
-  LINUX: { name: 'Linux', icon: 'i-mdi-linux' },
-  DOCKER: { name: 'Docker', icon: 'i-mdi-docker' },
-  JS: { name: 'JavaScript', icon: 'i-mdi-language-javascript' }
+export const TECH_STACKS: { [key: string]: { name: string } } = {
+  VUE: { name: 'Vue.js' },
+  TS: { name: 'TypeScript' },
+  NUXT: { name: 'Nuxt.js' },
+  AWS: { name: 'AWS' },
+  REACT: { name: 'React' },
+  PYTHON: { name: 'Python' },
+  NEXT: { name: 'Next.js' },
+  FASTAPI: { name: 'FastAPI' },
+  NODE: { name: 'Node.js' },
+  EXPRESS: { name: 'Express' },
+  JQUERY: { name: 'jQuery' },
+  HTML: { name: 'HTML' },
+  CSS: { name: 'CSS' },
+  SASS: { name: 'Sass' },
+  GIT: { name: 'Git' },
+  GITHUB: { name: 'GitHub' },
+  RUBY: { name: 'Ruby' },
+  RAILS: { name: 'Ruby on Rails' },
+  MYSQL: { name: 'MySQL' },
+  LINUX: { name: 'Linux' },
+  DOCKER: { name: 'Docker' },
+  JS: { name: 'JavaScript' }
 }
-
-// TODO: I want to display the icon of the technology used
-// When passing in variables, because they are not displayed
-// export const ICON_CLASS: { [key: string]: string } = {
-//   vue: 'i-mdi-vuejs',
-//   ts: 'i-mdi-language-typescript'
-// }
