@@ -7,17 +7,21 @@ export const Footer = () => {
       <nav>
         <div className="grid grid-flow-col gap-4">
           <div className="grid rounded place-content-center">
-            <a className="link" href="https://www.linkedin.com/in/naoya-ishizaka-a1898a292/">
+            <a
+              className="link"
+              href="https://www.linkedin.com/in/naoya-ishizaka-a1898a292/"
+              target="_blank"
+            >
               <div className="h-6 w-6 bg-primary hover:bg-secondary i-ion-logo-linkedin"></div>
             </a>
           </div>
           <div className="grid rounded place-content-center">
-            <a className="link" href="https://github.com/noah-00">
+            <a className="link" href="https://github.com/noah-00" target="_blank">
               <div className="h-6 w-6 bg-primary hover:bg-secondary i-ion-logo-github"></div>
             </a>
           </div>
           <div className="grid rounded place-content-center">
-            <a className="link" href="#">
+            <a className="link" href="/resume.pdf" target="_blank">
               <div className="h-6 w-6 bg-primary hover:bg-secondary i-ion-document-text"></div>
             </a>
           </div>

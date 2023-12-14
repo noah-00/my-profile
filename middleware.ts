@@ -13,6 +13,10 @@ export const config = {
 const cookieName = 'i18next'
 
 export function middleware(req: NextRequest) {
+  if (req.nextUrl.pathname.startsWith(`/resume.pdf`)) {
+    return NextResponse.next()
+  }
+
   let lng
   if (req.cookies.has(cookieName)) lng = acceptLanguage.get(req.cookies.get(cookieName)?.value)
   if (!lng) lng = acceptLanguage.get(req.headers.get('Accept-Language'))

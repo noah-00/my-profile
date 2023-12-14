@@ -22,9 +22,8 @@ export const FixedSidebar = () => {
             <div className="h-6 w-6 hover:bg-primary i-ion-logo-github"></div>
           </a>
         </div>
-        {/* TODO: resume */}
         <div className="grid rounded place-content-center my-3">
-          <a className="link" href="#" target="_blank">
+          <a className="link" href="/resume.pdf" target="_blank">
             <div className="h-6 w-6 hover:bg-primary i-ion-document-text"></div>
           </a>
         </div>
