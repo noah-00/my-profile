@@ -2,6 +2,7 @@ import acceptLanguage from 'accept-language'
 import { NextResponse, NextRequest } from 'next/server'
 
 import { fallbackLng, languages } from '@/app/i18n/setting'
+import { RESUME_URL } from '@/utils/MtData'
 
 acceptLanguage.languages(languages)
 
@@ -13,7 +14,8 @@ export const config = {
 const cookieName = 'i18next'
 
 export function middleware(req: NextRequest) {
-  if (req.nextUrl.pathname.startsWith(`/resume.pdf`)) {
+  // Skip if the request is for the resume
+  if (req.nextUrl.pathname.startsWith(RESUME_URL)) {
     return NextResponse.next()
   }
 
