@@ -7,6 +7,7 @@ import { Header } from '@/components/templates/Header'
 
 import { useTranslation } from '@/app/i18n/index'
 import { languages } from '@/app/i18n/setting'
+import Favicon from '@/public/favicon.png'
 
 import { Providers } from './provider'
 
@@ -19,7 +20,8 @@ const GetMetaData = async (lng: string) => {
 
   return {
     title: t('title'),
-    description: t('description')
+    description: t('description'),
+    icons: [{ rel: 'icon', url: Favicon.src }]
   }
 }
 
