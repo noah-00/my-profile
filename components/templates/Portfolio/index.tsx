@@ -2,6 +2,7 @@ import { MotionFadeInFromBottomWithScroll } from '@/components/motion/MotionFade
 import { PortfolioItem } from '@/components/parts/PortfolioItem'
 import { SectionTitle } from '@/components/parts/SectionTitle'
 
+// eslint-disable-next-line import/order
 import { useTranslation } from '@/app/i18n/index'
 
 type Props = {
