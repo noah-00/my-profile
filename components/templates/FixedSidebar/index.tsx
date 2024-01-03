@@ -22,11 +22,11 @@ export const FixedSidebar = () => {
             <div className="h-6 w-6 hover:bg-primary i-ion-logo-github"></div>
           </a>
         </div>
-        <div className="grid rounded place-content-center my-3">
+        {/* <div className="grid rounded place-content-center my-3">
           <a className="link" href="/resume.pdf" target="_blank">
             <div className="h-6 w-6 hover:bg-primary i-ion-document-text"></div>
           </a>
-        </div>
+        </div> */}
       </MotionFadeInFromTop>
       <MotionFadeInFromTop delay={1.5}>
         <div className="flex justify-center">

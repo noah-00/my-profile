@@ -5,7 +5,7 @@ import { SectionTitle } from '@/components/parts/SectionTitle'
 import { Window } from '@/components/parts/Window'
 
 import { useTranslation } from '@/app/i18n/index'
-import myPicture from '@/public/images/me.png'
+import myPicture from '@/public/images/me.jpeg'
 
 type Props = {
   lng: string
