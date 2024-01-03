@@ -23,7 +23,7 @@
       "yearsOfExperience": "2020/06 ~ 現在",
       "typeOfOccupationLabel": "職種",
       "typeOfOccupation": "フルスタックエンジニア",
-      "skillsLabel": "言語",
+      "skillsLabel": "技術",
       "skills": "React.js, Next.js, Vue.js, Nuxt.js, JavaScript, TypeScript, HTML, CSS, Node.js, Express.js, Python, FastAPI, Terraform, MongoDB, Dynamodb, GraphQL, other AWS services",
       "hobbyLabel": "趣味",
       "hobby": "サウナ, キャンプ, バスケットボール"
@@ -53,13 +53,13 @@
           {
             "title": "異常機器検知アプリ新規開発",
             "year": "2023/09 ~",
-            "description": "製油所で使用されいてる、精油精製の機械の故障を防ぐため異常検知アプリ開発",
-            "techStackKeys": "TS,NEXT,PYTHON,FASTAPI,AWS"
+            "description": "製油所内の製造システムの異常を検知ができるアプリケーションの新規開発を、行っております。機械学習を用いて機器の振動などのデータの解析を行い異常を検知を行い、ユーザーに通知やダッシュボード配信を行うアプリです。",
+            "techStackKeys": "TS,NUXT,PYTHON,FASTAPI,AWS"
           },
           {
             "title": "Jira拡張アプリ開発",
             "year": "2023/09 ~ 2023/11",
-            "description": "社内向けに、Jiraの単純作業を効率化できる拡張機能のアプリ開発",
+            "description": "社内向けに業務効率化を目的とした、Jiraの機能を拡張できるアプリを開発しておりました。バックログの一括作成や、バックログからテンプレートを作成など、Jira内の繰り返し作業を削減する事で効率化することを目的に開発をしておりました。",
             "techStackKeys": "REACT,TS"
           }
         ]
@@ -72,7 +72,7 @@
         "projects": []
       },
       "PHILIPPINES": {
-        "year": "2022/10 ~ 2023/04",
+        "year": "2022/09 ~ 2023/04",
         "title": "フィリピン",
         "description": "語学力向上・異文化に触れる事を目的にフィリピンに6ヶ月ほど留学をしていました。",
         "projects": []
@@ -81,13 +81,19 @@
         "year": "2020/06 ~ 2022/08",
         "title": "Winoo株式会社",
         "description": "フルスタックエンジニアとして、お客様から受注を受けて、アプリ開発をさせて頂いておりました。",
-        "projectsCount": "1",
+        "projectsCount": "2",
         "projects": [
           {
-            "title": "パブリックDMP(データマネジメントプラットフォーム) 新規開発",
+            "title": "パブリックDMP(データマネジメントプラットフォーム) ヴィジュアライズツール 新規開発",
             "year": "2020/06 ~ 2022/08",
-            "description": "企業が自社の顧客データを効果的に活用し、新規顧客獲得や既存顧客のロイヤリティ向上に貢献するための、様々なグラフを用いたデータマネジメントプラットフォーム",
+            "description": "企業が自社の顧客データを効果的に活用し、新規顧客獲得や既存顧客のロイヤリティ向上に貢献するための、様々なグラフを用いたデータマネジメントプラットフォームを開発しておりました。",
             "techStackKeys": "VUE,TS,NODE,AWS"
+          },
+          {
+            "title": "パブリックDMP(データマネジメントプラットフォーム) 機能改修",
+            "year": "2020/06 ~ 2020/07",
+            "description": "企業が自社の顧客データを効果的に活用し、新規顧客獲得や既存顧客のロイヤリティ向上に貢献するための、様々な数字を用いたデータマネジメントプラットフォームを開発しておりました。",
+            "techStackKeys": "RUBY,RAILS,JS,AWS"
           }
         ]
       },

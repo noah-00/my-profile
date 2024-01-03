@@ -54,7 +54,7 @@
             "title": "Development of a New Anomaly Detection App for Machinery",
             "year": "2023/09 ~",
             "description": "Developed an anomaly detection application to prevent failures in oil refining machinery used in refineries.",
-            "techStackKeys": "TS,NEXT,PYTHON,FASTAPI,AWS"
+            "techStackKeys": "TS,NUXT,PYTHON,FASTAPI,AWS"
           },
           {
             "title": "Development of Jira Extension App",
@@ -72,7 +72,7 @@
         "projects": []
       },
       "PHILIPPINES": {
-        "year": "2022/10 ~ 2023/04",
+        "year": "2022/09 ~ 2023/04",
         "title": "Study Abroad in the Philippines",
         "description": "I spent around 6 months in the Philippines to improve my language skills and experience a different culture.",
         "projectsCount": "0",
@@ -82,13 +82,19 @@
         "year": "2020/06 ~ 2022/08",
         "title": "Winoo Co., Ltd.",
         "description": "As a Full Stack Engineer, I worked on application development for various clients.",
-        "projectsCount": "1",
+        "projectsCount": "2",
         "projects": [
           {
-            "title": "Development of a Public DMP (Data Management Platform)",
+            "title": "New Development of a Public Data Management Platform (DMP) Visualization Tool",
             "year": "2020/06 ~ 2022/08",
             "description": "Developed a Data Management Platform using various graphs to effectively utilize customer data for acquiring new customers and enhancing loyalty of existing ones.",
             "techStackKeys": "VUE,TS,NODE,AWS"
+          },
+          {
+            "title": "Functional Enhancement of a Public Data Management Platform (DMP)",
+            "year": "2020/06 ~ 2020/07",
+            "description": "We have been developing a data management platform that utilizes various metrics to enable companies to effectively leverage their own customer data. This platform aims to contribute to the acquisition of new customers and the enhancement of loyalty among existing customers.",
+            "techStackKeys": "RUBY,RAILS,JS,AWS"
           }
         ]
       },
