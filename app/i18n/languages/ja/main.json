@@ -23,8 +23,8 @@
       "yearsOfExperience": "2020/06 ~ 現在",
       "typeOfOccupationLabel": "職種",
       "typeOfOccupation": "フルスタックエンジニア",
-      "skillsLabel": "技術",
-      "skills": "React.js, Next.js, Vue.js, Nuxt.js, JavaScript, TypeScript, HTML, CSS, Node.js, Express.js, Python, FastAPI, Terraform, MongoDB, Dynamodb, GraphQL, other AWS services",
+      "skillsLabel": "スキル",
+      "skills": "React.js, Next.js, Vue.js, Nuxt.js, JavaScript, TypeScript, HTML, CSS, Node.js, Express.js, Python, FastAPI, Terraform, Serverless Framework, other AWS services...",
       "hobbyLabel": "趣味",
       "hobby": "サウナ, キャンプ, バスケットボール"
     }

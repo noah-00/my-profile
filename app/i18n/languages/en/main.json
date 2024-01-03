@@ -23,8 +23,8 @@
       "yearsOfExperience": "2020/06 ~ present",
       "typeOfOccupationLabel": "Occupation",
       "typeOfOccupation": "Full Stack Engineer",
-      "skillsLabel": "Languages",
-      "skills": "React.js, Next.js, Vue.js, Nuxt.js, JavaScript, TypeScript, HTML, CSS, Node.js, Express.js, Python, FastAPI, Terraform, MongoDB, DynamoDB, GraphQL, other AWS services",
+      "skillsLabel": "Skills",
+      "skills": "React.js, Next.js, Vue.js, Nuxt.js, JavaScript, TypeScript, HTML, CSS, Node.js, Express.js, Python, FastAPI, Terraform, Serverless Framework, other AWS services...",
       "hobbyLabel": "Hobbies",
       "hobby": "Sauna, Camping, Basketball"
     }
