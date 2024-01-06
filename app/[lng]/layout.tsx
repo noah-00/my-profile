@@ -42,8 +42,8 @@ export default function RootLayout({ children, params: { lng } }: Props) {
         <Providers>
           <Header lng={lng} />
           {children}
-          <Footer />
-          <FixedSidebar />
+          <Footer lng={lng} />
+          <FixedSidebar lng={lng} />
         </Providers>
       </body>
     </html>

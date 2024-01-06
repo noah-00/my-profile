@@ -33,5 +33,3 @@ export const TECH_STACKS: { [key: string]: { name: string } } = {
 }
 
 export const MAIL_ADDRESS = 'ni.000.000.000.011@gmail.com'
-
-export const RESUME_URL = '/resume.pdf'

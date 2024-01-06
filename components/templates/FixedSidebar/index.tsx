@@ -4,7 +4,11 @@ import React from 'react'
 
 import { MotionFadeInFromTop } from '@/components/motion/MotionFadeInFromTop'
 
-export const FixedSidebar = () => {
+type Props = {
+  lng: string
+}
+
+export const FixedSidebar = (props: Props) => {
   return (
     <div className="fixed left-16 bottom-0 space-y-4 hidden md:block">
       <MotionFadeInFromTop delay={1.5}>
@@ -22,11 +26,11 @@ export const FixedSidebar = () => {
             <div className="h-6 w-6 hover:bg-primary i-ion-logo-github"></div>
           </a>
         </div>
-        {/* <div className="grid rounded place-content-center my-3">
-          <a className="link" href="/resume.pdf" target="_blank">
+        <div className="grid rounded place-content-center my-3">
+          <a className="link" href={`/resume_${props.lng}.pdf`} target="_blank">
             <div className="h-6 w-6 hover:bg-primary i-ion-document-text"></div>
           </a>
-        </div> */}
+        </div>
       </MotionFadeInFromTop>
       <MotionFadeInFromTop delay={1.5}>
         <div className="flex justify-center">

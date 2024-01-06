@@ -1,5 +1,5 @@
 import { MotionFadeInFromBottom } from '@/components/motion/MotionFadeInFromBottom'
-// import { DownloadPdfButton } from '@/components/parts/DownloadPdfButton'
+import { DownloadPdfButton } from '@/components/parts/DownloadPdfButton'
 
 import { useTranslation } from '@/app/i18n/index'
 
@@ -30,7 +30,7 @@ export const Top = async (props: TypeProps) => {
             {t('top.introduction-2')}
           </p>
         )}
-        {/* {renderText(0.9, <DownloadPdfButton content={t('top.resume')} />, 'pt-10')} */}
+        {renderText(0.9, <DownloadPdfButton content={t('top.resume')} lng={props.lng} />, 'pt-10')}
       </div>
     </div>
   )
