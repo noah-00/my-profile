@@ -10,7 +10,7 @@ export const Window = (props: Props) => {
         <span className="w-3 h-3 border-2 border-transparent rounded-full bg-yellow-400"></span>
         <span className="w-3 h-3 border-2 border-transparent rounded-full bg-green-400"></span>
       </div>
-      <div className="bg-base-300 border-t-0 justify-center w-full items-center rounded-b-lg p-10 grid grid-cols-1 md:grid-cols-2">
+      <div className="bg-base-300 border-t-0 justify-center w-full items-center rounded-b-lg p-10 grid">
         {props.children}
       </div>
     </div>

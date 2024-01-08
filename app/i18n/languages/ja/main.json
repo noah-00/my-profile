@@ -24,7 +24,11 @@
       "typeOfOccupationLabel": "職種",
       "typeOfOccupation": "フルスタックエンジニア",
       "skillsLabel": "スキル",
-      "skills": "React, Next.js, Vue.js, Nuxt.js, JavaScript, TypeScript, HTML, CSS, Node.js, Express.js, Ruby, Ruby on Rails, Python, FastAPI, Terraform, Serverless Framework, AWS",
+      "skillsLanguageLabel": "プログラミング言語",
+      "skillsFrameWorkLabel": "フレームワーク/ライブラリー",
+      "skillsCloudLabel": "クラウド",
+      "skillsOtherLabel": "その他",
+      "skillsCertificationLabel": "資格",
       "hobbyLabel": "趣味",
       "hobby": "サウナ, キャンプ, バスケットボール"
     }

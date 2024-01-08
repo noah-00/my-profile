@@ -24,7 +24,11 @@
       "typeOfOccupationLabel": "Occupation",
       "typeOfOccupation": "Full Stack Engineer",
       "skillsLabel": "Skills",
-      "skills": "React, Next.js, Vue.js, Nuxt.js, JavaScript, TypeScript, HTML, CSS, Node.js, Express.js, Ruby, Ruby on Rails, Python, FastAPI, Terraform, Serverless Framework, AWS",
+      "skillsLanguageLabel": "Programming Language",
+      "skillsFrameWorkLabel": "Framework/Library",
+      "skillsCloudLabel": "Cloud",
+      "skillsOtherLabel": "Other",
+      "skillsCertificationLabel": "Certification",
       "hobbyLabel": "Hobbies",
       "hobby": "Sauna, Camping, Basketball"
     }
