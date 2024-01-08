@@ -9,7 +9,7 @@ type Props = {
   lng: string
 }
 
-import AnkiQuikcer from '@/public/images/ankiQuikcer.png'
+import AnkiQuikcer from '@/public/images/anki_quikcer.png'
 
 const portfolioItemsObImage = [AnkiQuikcer]
 
