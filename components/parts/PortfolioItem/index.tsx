@@ -29,11 +29,11 @@ export const PortfolioItem = (props: Props) => {
                 )
               })}
             </div>
-            <div className="space-x-4">
-              <a className="link" href={props.github}>
+            <div className="space-x-4 pl-2">
+              <a className="link" href={props.github} target="_blank">
                 <div className="h-7 w-7 hover:bg-primary i-ion-logo-github"></div>
               </a>
-              <a className="link" href={props.demo}>
+              <a className="link" href={props.demo} target="_blank">
                 <div className="h-7 w-7 hover:bg-primary i-clarity-pop-out-line"></div>
               </a>
             </div>
@@ -43,10 +43,10 @@ export const PortfolioItem = (props: Props) => {
       <div className="lg:hidden">
         <Image alt="AnkiQuikcer" src={props.image} className="w-full" />
         <div className="mt-4 mx-4">
-          <div className="p-1 space-y-5">
+          <div className="p-1 space-y-6">
             <p className="text-primary text-sm">{props.subTitle}</p>
             <h2 className="text-2xl text-secondary font-bold">{props.title}</h2>
-            <div className="p-4 rounded-md">{props.description}</div>
+            <div className="rounded-md">{props.description}</div>
             <div className="text-sm space-x-2 space-y-2">
               {props.technologies.split(',').map((technology, index) => {
                 return (
@@ -57,10 +57,10 @@ export const PortfolioItem = (props: Props) => {
               })}
             </div>
             <div className="space-x-4">
-              <a className="link" href={props.github}>
+              <a className="link" href={props.github} target="_blank">
                 <div className="h-7 w-7 hover:bg-primary i-ion-logo-github"></div>
               </a>
-              <a className="link" href={props.demo}>
+              <a className="link" href={props.demo} target="_blank">
                 <div className="h-7 w-7 hover:bg-primary i-clarity-pop-out-line"></div>
               </a>
             </div>
