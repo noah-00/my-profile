@@ -1,6 +1,7 @@
 import { dir } from 'i18next'
 
 import './globals.css'
+import { MotionCursorFollower } from '@/components/motion/MotionCursorFollower'
 import { FixedSidebar } from '@/components/templates/FixedSidebar'
 import { Footer } from '@/components/templates/Footer'
 import { Header } from '@/components/templates/Header'
@@ -40,10 +41,12 @@ export default function RootLayout({ children, params: { lng } }: Props) {
     <html lang={lng} dir={dir(lng)}>
       <body className="font-mono">
         <Providers>
-          <Header lng={lng} />
-          {children}
-          <Footer lng={lng} />
-          <FixedSidebar lng={lng} />
+          <MotionCursorFollower>
+            <Header lng={lng} />
+            {children}
+            <Footer lng={lng} />
+            <FixedSidebar lng={lng} />
+          </MotionCursorFollower>
         </Providers>
       </body>
     </html>
