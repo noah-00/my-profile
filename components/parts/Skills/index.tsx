@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useTranslation } from '@/app/i18n/index'
+import { getTranslationInSSR } from '@/app/i18n/index'
 
 type Props = {
   lng: string
@@ -14,7 +14,7 @@ const SkillBadge = ({ iconClass, label }: any) => (
 )
 
 export const Skills = async (props: Props) => {
-  const { t } = await useTranslation(props.lng, 'main')
+  const { t } = await getTranslationInSSR(props.lng, 'main')
 
   const languages = [
     { iconClass: 'i-vscode-icons-file-type-typescript-official', label: 'TypeScript' },

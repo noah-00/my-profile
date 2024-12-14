@@ -7,7 +7,7 @@ import { LngButton } from '@/components/parts/LangButton'
 import { ThemeSwitcher } from '@/components/parts/ThemeSwitcher'
 import { HamburgerMenu } from '@/components/templates/HamburgerMenu'
 
-import { useTranslation } from '@/app/i18n/index'
+import { getTranslationInSSR } from '@/app/i18n/index'
 import { HEADER_MENU } from '@/utils/MtData'
 
 type LngButtonProps = {
@@ -15,7 +15,7 @@ type LngButtonProps = {
 }
 
 export const Header = async ({ lng }: LngButtonProps) => {
-  const { t } = await useTranslation(lng)
+  const { t } = await getTranslationInSSR(lng)
 
   return (
     <div className="navbar sticky top-0 z-30 backdrop-blur-sm">

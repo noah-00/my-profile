@@ -1,14 +1,14 @@
 import { MotionFadeInFromBottom } from '@/components/motion/MotionFadeInFromBottom'
 import { DownloadPdfButton } from '@/components/parts/DownloadPdfButton'
 
-import { useTranslation } from '@/app/i18n/index'
+import { getTranslationInSSR } from '@/app/i18n/index'
 
 type TypeProps = {
   lng: string
 }
 
 export const Top = async (props: TypeProps) => {
-  const { t } = await useTranslation(props.lng, 'main')
+  const { t } = await getTranslationInSSR(props.lng, 'main')
 
   const renderText = (delay: number, children: React.ReactNode, className?: string) => (
     <MotionFadeInFromBottom delay={delay}>

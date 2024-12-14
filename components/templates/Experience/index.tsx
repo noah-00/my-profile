@@ -3,7 +3,7 @@ import { SectionTitle } from '@/components/parts/SectionTitle'
 import { TimeLineItem } from '@/components/parts/TimeLineItem'
 import { Accordions } from '@/components/templates/Accordions.ts'
 
-import { useTranslation } from '@/app/i18n/index'
+import { getTranslationInSSR } from '@/app/i18n/index'
 import { TIME_LINE_ITEM_KEYS } from '@/utils/MtData'
 
 type Props = {
@@ -11,7 +11,7 @@ type Props = {
 }
 
 export const Experience = async (props: Props) => {
-  const { t } = await useTranslation(props.lng, 'main')
+  const { t } = await getTranslationInSSR(props.lng, 'main')
 
   return (
     <section id="Experience">

@@ -6,7 +6,7 @@ import { FixedSidebar } from '@/components/templates/FixedSidebar'
 import { Footer } from '@/components/templates/Footer'
 import { Header } from '@/components/templates/Header'
 
-import { useTranslation } from '@/app/i18n/index'
+import { getTranslationInSSR } from '@/app/i18n/index'
 import { languages } from '@/app/i18n/setting'
 import Favicon from '@/public/favicon.png'
 
@@ -17,7 +17,7 @@ export async function generateStaticParams() {
 }
 
 const GetMetaData = async (lng: string) => {
-  const { t } = await useTranslation(lng, 'main')
+  const { t } = await getTranslationInSSR(lng, 'main')
 
   return {
     title: t('title'),

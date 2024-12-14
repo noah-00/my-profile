@@ -8,7 +8,7 @@ import React from 'react'
 import { MotionFadeInFromBottomWithScroll } from '@/components/motion/MotionFadeInFromBottomWithScroll'
 import { SectionTitle } from '@/components/parts/SectionTitle'
 
-import { useTranslation } from '@/app/i18n/index'
+import { getTranslationInSSR } from '@/app/i18n/index'
 // import myPicture from '@/public/images/me.jpeg'
 import { MAIL_ADDRESS } from '@/utils/MtData'
 
@@ -17,7 +17,7 @@ type Props = {
 }
 
 export const Contact = async (props: Props) => {
-  const { t } = await useTranslation(props.lng, 'main')
+  const { t } = await getTranslationInSSR(props.lng, 'main')
 
   const handleEmail = () => {
     window.location.href = `mailto:${MAIL_ADDRESS}`

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import { HeaderMenuItem } from '@/components/parts/HeaderMenuItem'
 
-import { useTranslation } from '@/app/i18n/index'
+import { getTranslationInSSR } from '@/app/i18n/index'
 import { labels } from '@/app/i18n/setting'
 import { HEADER_MENU } from '@/utils/MtData'
 
@@ -11,7 +11,7 @@ type TypeProps = {
 }
 
 export const HamburgerMenu = async (props: TypeProps) => {
-  const { t } = await useTranslation(props.lng)
+  const { t } = await getTranslationInSSR(props.lng)
 
   return (
     <div className="drawer drawer-end p-0 m-0">

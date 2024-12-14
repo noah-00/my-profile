@@ -5,7 +5,7 @@ import { SectionTitle } from '@/components/parts/SectionTitle'
 import { Skills } from '@/components/parts/Skills'
 import { Window } from '@/components/parts/Window'
 
-import { useTranslation } from '@/app/i18n/index'
+import { getTranslationInSSR } from '@/app/i18n/index'
 import myPicture from '@/public/images/me.jpeg'
 
 type Props = {
@@ -15,7 +15,7 @@ type Props = {
 const aboutDataSet = ['yearsOfExperience', 'typeOfOccupation', 'hobby', 'skills']
 
 export const About = async (props: Props) => {
-  const { t } = await useTranslation(props.lng, 'main')
+  const { t } = await getTranslationInSSR(props.lng, 'main')
 
   return (
     <section id="About">
