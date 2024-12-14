@@ -1,5 +1,7 @@
 import { iconsPlugin, getIconCollections } from '@egoist/tailwindcss-icons'
 
+import { THEME_DARK, THEME_LIGHT } from './utils/Const'
+
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -35,7 +37,7 @@ const config: Config = {
   daisyui: {
     themes: [
       {
-        myDark: {
+        [THEME_DARK]: {
           primary: '#5eead4',
           secondary: '#FFF',
           accent: '#EA5E74',
@@ -47,7 +49,7 @@ const config: Config = {
           error: '#f87272'
         }
       },
-      'winter'
+      THEME_LIGHT
     ]
   }
 }
