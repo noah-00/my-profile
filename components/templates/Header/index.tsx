@@ -18,7 +18,7 @@ export const Header = async ({ lng }: LngButtonProps) => {
   const { t } = await useTranslation(lng)
 
   return (
-    <div className="navbar sticky top-0 z-30 bg-base-100 bg-opacity-90">
+    <div className="navbar sticky top-0 z-30 backdrop-blur-sm">
       <div className="navbar-start">
         <MotionFadeIn>
           <a className="btn btn-ghost normal-case text-xl" href="/">
