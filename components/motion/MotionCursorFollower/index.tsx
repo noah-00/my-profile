@@ -34,9 +34,9 @@ export const MotionCursorFollower = ({ children }: Props) => {
   const { theme } = useTheme()
 
   const isDark = theme === 'myDark'
-  const SPOTLIGHT_COLOR = isDark ? '#2e3c4a' : '#81a1c1'
+  const SPOTLIGHT_COLOR = isDark ? '#2e3c4a' : '#4d6eff'
 
-  const SPOTLIGHT_OPACITY = 0.4
+  const SPOTLIGHT_OPACITY = isDark ? 0.5 : 0.35
   const SPOTLIGHT_SIZE = 1000
   const SPOTLIGHT_TRANSITION = { type: 'tween', duration: 0.1 }
 
