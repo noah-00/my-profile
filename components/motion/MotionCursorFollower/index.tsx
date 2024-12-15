@@ -39,6 +39,7 @@ export const MotionCursorFollower = ({ children }: Props) => {
   const SPOTLIGHT_OPACITY = isDark ? 0.5 : 0.35
   const SPOTLIGHT_SIZE = 1000
   const SPOTLIGHT_TRANSITION = { type: 'tween', duration: 0.1 }
+  const SPOTLIGHT_Z_INDEX = -1
 
   const cursorVariants = useCallback(() => {
     return {
@@ -49,7 +50,8 @@ export const MotionCursorFollower = ({ children }: Props) => {
         background: `radial-gradient(circle, ${SPOTLIGHT_COLOR} 0%, rgba(0, 0, 0, 0) 60%)`,
         x: lastMousePosition.x - SPOTLIGHT_SIZE / 2,
         y: lastMousePosition.y - SPOTLIGHT_SIZE / 2,
-        transition: SPOTLIGHT_TRANSITION
+        transition: SPOTLIGHT_TRANSITION,
+        zIndex: SPOTLIGHT_Z_INDEX
       }
     }
   }, [lastMousePosition, SPOTLIGHT_COLOR])
@@ -57,7 +59,7 @@ export const MotionCursorFollower = ({ children }: Props) => {
   return (
     <div className="relative h-screen" ref={ref}>
       <motion.div
-        className="pointer-events-none fixed z-[9999]"
+        className="pointer-events-none fixed"
         variants={cursorVariants()}
         animate="default"
       />

@@ -3,10 +3,12 @@ type Props = {
 }
 
 export const Footer = (props: Props) => {
+  const currentYear = new Date().getFullYear()
+
   return (
-    <footer className="footer footer-center p-10 bg-base-300 mt-20">
+    <footer className="footer footer-center p-10 mt-20">
       <aside>
-        <p className="text-primary">Copyright © 2024 - All right reserved</p>
+        <p className="text-primary">Copyright © {currentYear} - All right reserved</p>
       </aside>
       <nav>
         <div className="grid grid-flow-col gap-4">
