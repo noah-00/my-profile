@@ -29,7 +29,7 @@ export const Top = async (props: TypeProps) => {
         0.4,
         <Image
           src={myPicture}
-          className="rounded-lg shadow-2xl max-w-[400px]"
+          className="rounded-lg shadow-2xl max-w-[300px] md:max-w-[500px]"
           width={650}
           height={650}
           alt="Naoya Ishizaka"
