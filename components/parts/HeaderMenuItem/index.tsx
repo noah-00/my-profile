@@ -3,6 +3,8 @@
 import { useRef } from 'react'
 import { Link as Scroll } from 'react-scroll'
 
+import useMediaQuery from '@/hooks/useMediaQuery'
+
 type HeaderMenuItemProps = {
   label: string
   index: number
@@ -10,9 +12,10 @@ type HeaderMenuItemProps = {
 
 export const HeaderMenuItem = (props: HeaderMenuItemProps) => {
   const ref = useRef<HTMLLabelElement>(null)
+  const isPC = useMediaQuery(648)
 
   const closeDrawer = () => {
-    if (ref.current) {
+    if (ref.current && !isPC) {
       ref.current.click()
     }
   }
