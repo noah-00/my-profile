@@ -21,16 +21,11 @@
     "information": {
       "yearsOfExperienceLabel": "Experience",
       "yearsOfExperience": "2020/06 ~ present",
-      "typeOfOccupationLabel": "Occupation",
-      "typeOfOccupation": "Full Stack Engineer",
       "skillsLabel": "Skills",
-      "skillsLanguageLabel": "Programming Language",
-      "skillsFrameWorkLabel": "Framework/Library",
-      "skillsCloudLabel": "Cloud",
-      "skillsOtherLabel": "Other",
-      "skillsCertificationLabel": "Certification",
-      "hobbyLabel": "Hobbies",
-      "hobby": "Sauna, Camping, Basketball"
+      "languagesLabel": "Programming Language",
+      "frameworksLabel": "Framework / Library",
+      "othersLabel": "Other",
+      "certificationsLabel": "Certification"
     }
   },
   "portfolio": {

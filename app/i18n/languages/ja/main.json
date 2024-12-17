@@ -21,16 +21,11 @@
     "information": {
       "yearsOfExperienceLabel": "職務歴",
       "yearsOfExperience": "2020/06 ~ 現在",
-      "typeOfOccupationLabel": "職種",
-      "typeOfOccupation": "フルスタックエンジニア",
       "skillsLabel": "スキル",
-      "skillsLanguageLabel": "プログラミング言語",
-      "skillsFrameWorkLabel": "フレームワーク/ライブラリー",
-      "skillsCloudLabel": "クラウド",
-      "skillsOtherLabel": "その他",
-      "skillsCertificationLabel": "資格",
-      "hobbyLabel": "趣味",
-      "hobby": "サウナ, キャンプ, バスケットボール"
+      "languagesLabel": "プログラミング言語",
+      "frameworksLabel": "フレームワーク / ライブラリ",
+      "othersLabel": "その他",
+      "certificationsLabel": "資格"
     }
   },
   "portfolio": {
