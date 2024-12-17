@@ -1,8 +1,11 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 import { HeaderMenuItem } from '@/components/parts/HeaderMenuItem'
 
-import { getTranslationInSSR } from '@/app/i18n/index'
+import { useTranslation } from '@/app/i18n/client'
 import { labels } from '@/app/i18n/setting'
 import { HEADER_MENU } from '@/utils/MtData'
 
@@ -10,8 +13,12 @@ type TypeProps = {
   lng: string
 }
 
-export const HamburgerMenu = async (props: TypeProps) => {
-  const { t } = await getTranslationInSSR(props.lng)
+export const HamburgerMenu = (props: TypeProps) => {
+  const { t } = useTranslation(props.lng)
+
+  const pathName = usePathname()
+  const splittedUrlByLng = pathName.split(props.lng)
+  const pathWithoutLng = splittedUrlByLng.slice(1).join('')
 
   return (
     <div className="drawer drawer-end p-0 m-0">
@@ -42,7 +49,7 @@ export const HamburgerMenu = async (props: TypeProps) => {
             return (
               <li key={label} className="px-4">
                 <Link
-                  href={`/${label}`}
+                  href={`/${label}${pathWithoutLng && pathWithoutLng}`}
                   className={`flex justify-between ${isCurrentLang && 'bg-base-100'}`}
                 >
                   <div className="flex items-center">

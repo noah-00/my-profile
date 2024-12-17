@@ -1,4 +1,7 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 import { labels } from '@/app/i18n/setting'
 
@@ -6,7 +9,11 @@ type LngButtonProps = {
   lng: string
 }
 
-export const LngButton = async ({ lng }: LngButtonProps) => {
+export const LngButton = ({ lng }: LngButtonProps) => {
+  const pathName = usePathname()
+  const splittedUrlByLng = pathName.split(lng)
+  const pathWithoutLng = splittedUrlByLng.slice(1).join('')
+
   return (
     <>
       <details>
@@ -22,7 +29,7 @@ export const LngButton = async ({ lng }: LngButtonProps) => {
             return (
               <li key={label}>
                 <Link
-                  href={`/${label}`}
+                  href={`/${label}${pathWithoutLng && pathWithoutLng}`}
                   className={`flex justify-between ${isCurrentLang && 'bg-base-100'}`}
                 >
                   <div className="flex items-center">

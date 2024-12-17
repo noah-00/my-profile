@@ -39,7 +39,7 @@ export const Portfolio = async (props: Props) => {
         )
       })}
       <MotionFadeInFromBottomWithScroll>
-        <MoreLink href="#Projects">{t('portfolio.viewAllProjects')}</MoreLink>
+        <MoreLink href={`/${props.lng}/projects`}>{t('portfolio.viewAllProjects')}</MoreLink>
       </MotionFadeInFromBottomWithScroll>
     </section>
   )
