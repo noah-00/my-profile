@@ -1,14 +1,14 @@
 import { Accordion } from '@/components/parts/Accordion.ts'
 
-import { getTranslationInSSR } from '@/app/i18n/index'
+import { useTranslation } from '@/app/i18n/client'
 
 type Props = {
   organizationKey: string
   lng: string
 }
 
-export const Accordions = async (props: Props) => {
-  const { t } = await getTranslationInSSR(props.lng, 'main')
+export const Accordions = (props: Props) => {
+  const { t } = useTranslation(props.lng, 'main')
 
   const projectsCount = Number(t(`experience.items.${props.organizationKey}.projectsCount`))
 
