@@ -24,7 +24,7 @@ export const Top = async (props: TypeProps) => {
   )
 
   return (
-    <div className="hero-content flex-col lg:flex-row-reverse lg:mt-32 lg:mb-20 mt-4 gap-6">
+    <div className="hero-content flex-col lg:flex-row-reverse lg:mt-24 lg:mb-20 mt-4 gap-6">
       {renderImage(
         0.4,
         <Image
