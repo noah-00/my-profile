@@ -8,22 +8,27 @@ type Props = {
   technologies: string
   github: string
   demo: string
+  index: number
 }
 
 export const PortfolioItem = (props: Props) => {
+  const isOdd = props.index % 2 === 1
+
   return (
     <>
-      <div className="px-8 lg:flex hidden">
+      <div className={`px-8 py-16 lg:flex hidden ${isOdd ? 'flex-row-reverse' : 'flex-row'}`}>
         <Image alt="AnkiQuikcer" src={props.image} className="w-2/4" />
         <div className="w-2/4 relative">
-          <div className="w-full p-1 absolute -left-10 -top-4 text-right space-y-5">
+          <div
+            className={`w-full p-1 absolute -left-10 -top-4 space-y-5 ${isOdd ? 'text-left' : 'text-right'}`}
+          >
             <p className="text-primary text-sm">{props.subTitle}</p>
             <h2 className="text-2xl text-secondary font-bold">{props.title}</h2>
             <div className="p-2 rounded-md bg-base-100">{props.description}</div>
             <div className="text-sm space-x-2 space-y-2">
               {props.technologies.split(',').map((technology, index) => {
                 return (
-                  <span key={index} className="badge">
+                  <span key={index} className="badge badge-primary badge-outline">
                     {technology}
                   </span>
                 )
@@ -40,7 +45,7 @@ export const PortfolioItem = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className="lg:hidden">
+      <div className="lg:hidden py-4">
         <Image alt="AnkiQuikcer" src={props.image} className="w-full" />
         <div className="mt-4 mx-4">
           <div className="p-1 space-y-6">
@@ -50,7 +55,7 @@ export const PortfolioItem = (props: Props) => {
             <div className="text-sm space-x-2 space-y-2">
               {props.technologies.split(',').map((technology, index) => {
                 return (
-                  <span key={index} className="badge">
+                  <span key={index} className="badge badge-primary badge-outline">
                     {technology}
                   </span>
                 )

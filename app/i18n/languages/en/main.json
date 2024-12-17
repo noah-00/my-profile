@@ -8,7 +8,7 @@
     "nabs": {
       "about": "About",
       "experience": "Experience",
-      "portfolio": "Portfolio",
+      "portfolio": "Projects",
       "contact": "Contact"
     }
   },
@@ -29,6 +29,7 @@
     }
   },
   "portfolio": {
+    "viewAllProjects": "View all projects",
     "items": [
       {
         "subTitle": "Google extension",
@@ -42,6 +43,7 @@
     ]
   },
   "experience": {
+    "viewResume": "Download the full resume",
     "items": {
       "TDC": {
         "year": "2023/09 ~ ",

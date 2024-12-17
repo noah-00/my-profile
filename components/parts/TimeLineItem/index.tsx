@@ -28,7 +28,7 @@ export const TimeLineItem = (props: Props) => {
 
   return (
     <li
-      className={`${isHovered && 'opacity-100'} ${isNotHovered && 'opacity-60'} ${hoverShadowClass} rounded-lg hover:bg-base-200 `}
+      className={`${isHovered && 'opacity-100'} ${isNotHovered && 'opacity-50'} ${hoverShadowClass} rounded-lg hover:bg-base-200 `}
       onMouseEnter={() => props.setHoveredIndex(props.index)}
       onMouseLeave={() => props.setHoveredIndex(null)}
     >
