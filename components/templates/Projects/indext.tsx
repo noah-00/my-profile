@@ -2,17 +2,23 @@
 
 import React, { useState } from 'react'
 
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { useTheme } from 'next-themes'
 
-import { useTranslation } from '@/app/i18n/client'
 import { THEME_DARK } from '@/utils/Const'
-import { PROJECTS } from '@/utils/MtData'
 
 const TABS = ['Web Services', 'Web Sites']
 
 type Props = {
-  lng: string
+  projects: {
+    image: StaticImageData
+    title: string
+    description: string
+    technologies: string[]
+    type: string
+    github: string
+    demo: string
+  }[]
 }
 
 export const Projects = (props: Props) => {
@@ -24,7 +30,6 @@ export const Projects = (props: Props) => {
     : 'shadow-[0_3px_6px_rgba(77,_110,_212,_0.7)]'
 
   const [tab, setTab] = useState(TABS[0])
-  const { t } = useTranslation(props.lng, 'main')
 
   return (
     <>
@@ -44,20 +49,19 @@ export const Projects = (props: Props) => {
 
       {/* Tab contents */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">
-        {PROJECTS.map(
-          (image, index) =>
-            t(`portfolio.items.${index}.type`) === tab && (
+        {props.projects.map(
+          (project, index) =>
+            project.type === tab && (
               <div className={`card bg-base-100 ${shadowClass}`} key={index}>
                 <figure>
-                  <Image src={image} alt={`Project Image ${index}`} />
+                  <Image src={project.image} alt={`Project Image ${index}`} />
                 </figure>
                 <div className="card-body">
-                  <h2 className="card-title text-2xl">{t(`portfolio.items.${index}.title`)}</h2>
-                  <p>{t(`portfolio.items.${index}.description`)}</p>
+                  <h2 className="card-title text-2xl">{project.title}</h2>
+                  <p>{project.description}</p>
                   <div className="text-sm space-x-2 space-y-2">
-                    {t(`portfolio.items.${index}.technologies`)
-                      .split(',')
-                      .map((technology, index) => {
+                    {project.technologies &&
+                      project.technologies.map((technology, index) => {
                         return (
                           <span key={index} className="badge badge-primary badge-outline">
                             {technology}
@@ -66,10 +70,10 @@ export const Projects = (props: Props) => {
                       })}
                   </div>
                   <div className="space-x-4 mt-2">
-                    <a className="link" href={t(`portfolio.items.${index}.github`)} target="_blank">
+                    <a className="link" href={project.github} target="_blank">
                       <div className="h-7 w-7 hover:bg-primary i-ion-logo-github"></div>
                     </a>
-                    <a className="link" href={t(`portfolio.items.${index}.demo`)} target="_blank">
+                    <a className="link" href={project.demo} target="_blank">
                       <div className="h-7 w-7 hover:bg-primary i-clarity-pop-out-line"></div>
                     </a>
                   </div>
