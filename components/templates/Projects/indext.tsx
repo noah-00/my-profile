@@ -57,7 +57,7 @@ export const Projects = (props: Props) => {
         {props.projects.map(
           (project, index) =>
             project.type === tab && (
-              <MotionFadeInFromBottom delay={0.15 * (index + 1)} key={index}>
+              <MotionFadeInFromBottom delay={0.15 * (index + 1 / 2)} key={index}>
                 <div className={`card bg-base-100 ${shadowClass}`}>
                   <figure>
                     <Image src={project.image} alt={`Project Image ${index}`} />
