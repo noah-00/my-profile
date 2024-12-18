@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 
 // TODO: prepare my picture
@@ -19,10 +17,6 @@ type Props = {
 export const Contact = async (props: Props) => {
   const { t } = await getTranslationInSSR(props.lng, 'main')
 
-  const handleEmail = () => {
-    window.location.href = `mailto:${MAIL_ADDRESS}`
-  }
-
   return (
     <section id="Contact">
       <MotionFadeInFromBottomWithScroll>
@@ -39,13 +33,13 @@ export const Contact = async (props: Props) => {
                 <br />
                 {t('contact.content-2')}
               </p>
-              <button
-                onClick={handleEmail}
+              <a
+                href={`mailto:${MAIL_ADDRESS}`}
                 className="btn btn-primary btn-outline shadow-[inset_0px_0px_8px_1px] shadow-primary"
               >
                 <span className="h-4 w-4 i-ion-paper-airplane"></span>
                 {t('contact.button')}
-              </button>
+              </a>
             </div>
           </div>
         </div>
