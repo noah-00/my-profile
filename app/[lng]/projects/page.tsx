@@ -22,11 +22,11 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
 
   return (
     <div className="w-4/5 md:w-3/4 mx-auto">
-      <MotionFadeIn delay={0.25}>
+      <MotionFadeIn delay={0.15}>
         <BackLink href={`/${lng}`}>{t('header.name')}</BackLink>
         <h1 className="lg:text-5xl text-4xl font-bold mt-4">Projects</h1>
-        <Projects projects={projects} />
       </MotionFadeIn>
+      <Projects projects={projects} />
     </div>
   )
 }
