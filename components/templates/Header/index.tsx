@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Link from 'next/link'
+
 import { MotionFadeIn } from '@/components/motion/MotionFadeIn'
 import { MotionFadeInFromTop } from '@/components/motion/MotionFadeInFromTop'
 import { HeaderMenuItem } from '@/components/parts/HeaderMenuItem'
@@ -21,9 +23,9 @@ export const Header = async ({ lng }: LngButtonProps) => {
     <div className="navbar sticky top-0 z-30 backdrop-blur-sm">
       <div className="navbar-start">
         <MotionFadeIn>
-          <a className="btn btn-ghost normal-case text-xl" href="/">
+          <Link className="btn btn-ghost normal-case text-xl" href={`/${lng}`}>
             {t('header.name')}
-          </a>
+          </Link>
         </MotionFadeIn>
       </div>
       <div className="navbar-center hidden lg:flex">
