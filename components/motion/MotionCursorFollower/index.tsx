@@ -6,11 +6,14 @@ import useMouse from '@react-hook/mouse-position'
 import { motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
 
+import useMediaQuery from '@/hooks/useMediaQuery'
+
 type Props = {
   children: ReactNode
 }
 
 export const MotionCursorFollower = ({ children }: Props) => {
+  const isPc = useMediaQuery(648)
   const ref = useRef(null)
   const mouse = useMouse(ref, {
     enterDelay: 0,
@@ -23,6 +26,8 @@ export const MotionCursorFollower = ({ children }: Props) => {
   })
 
   useEffect(() => {
+    if (!isPc) return
+
     if (mouse.clientX !== null && mouse.clientY !== null) {
       setLastMousePosition({
         x: mouse.clientX,
