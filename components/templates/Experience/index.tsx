@@ -20,7 +20,9 @@ export const Experience = async (props: Props) => {
       </MotionFadeInFromBottomWithScroll>
       <MotionFadeInFromBottomWithScroll>
         <TimeLine lng={props.lng} />
-        <MoreLink href={`/resume_${props.lng}.pdf`}>{t('experience.viewResume')}</MoreLink>
+        <MoreLink href={`/resume_${props.lng}.pdf`} isATag>
+          {t('experience.viewResume')}
+        </MoreLink>
       </MotionFadeInFromBottomWithScroll>
     </section>
   )
