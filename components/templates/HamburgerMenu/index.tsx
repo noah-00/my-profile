@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { HeaderMenuItem } from '@/components/parts/HeaderMenuItem'
@@ -48,7 +47,7 @@ export const HamburgerMenu = (props: TypeProps) => {
             const isCurrentLang = props.lng === (label as keyof typeof labels)
             return (
               <li key={label} className="px-4">
-                <Link
+                <a
                   href={`/${label}${pathWithoutLng && pathWithoutLng}`}
                   className={`flex justify-between ${isCurrentLang && 'bg-base-100'}`}
                 >
@@ -63,7 +62,7 @@ export const HamburgerMenu = (props: TypeProps) => {
                   {!isCurrentLang && (
                     <div className="i-ion-md-arrow-round-up bg-gray-500 rotate-45"></div>
                   )}
-                </Link>
+                </a>
               </li>
             )
           })}

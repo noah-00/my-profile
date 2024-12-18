@@ -38,7 +38,8 @@
         "image": "AnkiQuikcer",
         "technologies": "TypeScript,React,Next.js,Tailwind,Anki-Connect-API",
         "github": "https://github.com/noah-00/anki-quicker",
-        "demo": "https://chromewebstore.google.com/detail/anki-quicker/bkffcipebmidpcbhipmblnpmoaofdinh?hl=ja"
+        "demo": "https://chromewebstore.google.com/detail/anki-quicker/bkffcipebmidpcbhipmblnpmoaofdinh?hl=ja",
+        "type": "Web Services"
       }
     ]
   },

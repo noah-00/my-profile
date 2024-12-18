@@ -5,14 +5,11 @@ import { SectionTitle } from '@/components/parts/SectionTitle'
 
 // eslint-disable-next-line import/order
 import { getTranslationInSSR } from '@/app/i18n/index'
+import { PROJECTS } from '@/utils/MtData'
 
 type Props = {
   lng: string
 }
-
-import AnkiQuikcer from '@/public/images/anki_quikcer.png'
-
-const portfolioItemsObImage = [AnkiQuikcer]
 
 export const Portfolio = async (props: Props) => {
   const { t } = await getTranslationInSSR(props.lng, 'main')
@@ -22,7 +19,7 @@ export const Portfolio = async (props: Props) => {
       <MotionFadeInFromBottomWithScroll>
         <SectionTitle title="Projects" index="03" />
       </MotionFadeInFromBottomWithScroll>
-      {portfolioItemsObImage.map((image, index) => {
+      {PROJECTS.map((image, index) => {
         return (
           <MotionFadeInFromBottomWithScroll key={index}>
             <PortfolioItem

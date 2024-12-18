@@ -1,3 +1,5 @@
+import AnkiQuikcer from '@/public/images/anki_quikcer.png'
+
 export const HEADER_MENU = [
   'header.nabs.about',
   'header.nabs.experience',
@@ -33,3 +35,5 @@ export const TECH_STACKS: { [key: string]: { name: string } } = {
 }
 
 export const MAIL_ADDRESS = 'ni.000.000.000.011@gmail.com'
+
+export const PROJECTS = [AnkiQuikcer]

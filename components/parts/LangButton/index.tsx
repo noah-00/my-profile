@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { labels } from '@/app/i18n/setting'
@@ -28,7 +27,7 @@ export const LngButton = ({ lng }: LngButtonProps) => {
 
             return (
               <li key={label}>
-                <Link
+                <a
                   href={`/${label}${pathWithoutLng && pathWithoutLng}`}
                   className={`flex justify-between ${isCurrentLang && 'bg-base-100'}`}
                 >
@@ -43,7 +42,7 @@ export const LngButton = ({ lng }: LngButtonProps) => {
                   {!isCurrentLang && (
                     <div className="i-ion-md-arrow-round-up bg-gray-500 rotate-45"></div>
                   )}
-                </Link>
+                </a>
               </li>
             )
           })}
