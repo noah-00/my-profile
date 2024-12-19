@@ -12,7 +12,7 @@ type Props = {
   lng: string
 }
 
-const aboutDataSet = ['yearsOfExperience', 'languages', 'frameworks', 'others', 'certifications']
+const aboutDataSet = ['languages', 'frameworks', 'others', 'certifications']
 
 const skillsData = {
   languages: [
@@ -107,7 +107,7 @@ export const About = async (props: Props) => {
                 <div className="col-span-3 flex items-center">
                   <div>
                     <h2 className="text-[50px] text-secondary font-bold">Naoya Ishizaka</h2>
-                    <h3>Web Developer</h3>
+                    <h3>Frontend Developer</h3>
                   </div>
                 </div>
               </div>
