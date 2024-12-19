@@ -13,8 +13,8 @@
     }
   },
   "top": {
-    "introduction-1": "フロントエンドの技術を中心に、Webアプリの開発を行っております。",
-    "introduction-2": "またバックエンドAPI開発、AWSでのアーキテクチャ構築なども経験しております。",
+    "introduction-1": "フロントエンドの技術を中心に、約{{experienceYears}}年間Webアプリの開発に携わっております。",
+    "introduction-2": "また、ServerlessFramework・Amplifyなどを用いた、AWSサービスとの連携も得意としております。",
     "resume": "職務経歴書"
   },
   "about": {

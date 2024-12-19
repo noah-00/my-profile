@@ -5,6 +5,7 @@ import { DownloadPdfButton } from '@/components/parts/DownloadPdfButton'
 
 import { getTranslationInSSR } from '@/app/i18n/index'
 import myPicture from '@/public/images/me_1.png'
+import { getExperienceYears } from '@/utils/Utils'
 
 type TypeProps = {
   lng: string
@@ -12,6 +13,8 @@ type TypeProps = {
 
 export const Top = async (props: TypeProps) => {
   const { t } = await getTranslationInSSR(props.lng, 'main')
+
+  const experienceYears = getExperienceYears()
 
   const renderText = (delay: number, children: React.ReactNode, className?: string) => (
     <MotionFadeInFromBottom delay={delay}>
@@ -43,11 +46,11 @@ export const Top = async (props: TypeProps) => {
             Naoya Ishizaka
           </h1>
         )}
-        {renderText(0.7, <h2 className="text-[30px] font-semibold">Web developer</h2>)}
+        {renderText(0.7, <h2 className="text-[30px] font-semibold">Frontend developer</h2>)}
         {renderText(
           0.8,
           <p>
-            {t('top.introduction-1')}
+            {t('top.introduction-1', { experienceYears })}
             <br />
             {t('top.introduction-2')}
           </p>
