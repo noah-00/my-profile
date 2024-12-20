@@ -44,71 +44,57 @@
   "experience": {
     "viewResume": "Download the full resume",
     "items": {
-      "TDC": {
-        "year": "2023/09 ~ ",
-        "title": "TDC Software Inc.",
-        "description": "As a Full Stack Engineer, I have been involved in both in-house and client-based application development.",
-        "projectsCount": "2",
-        "projects": [
-          {
-            "title": "Development of a New Anomaly Detection App for Machinery",
-            "year": "2023/09 ~",
-            "description": "Developed an anomaly detection application to prevent failures in oil refining machinery used in refineries.",
-            "techStackKeys": "TS,NUXT,PYTHON,FASTAPI,AWS"
-          },
-          {
-            "title": "Development of Jira Extension App",
-            "year": "2023/09 ~ 2023/11",
-            "description": "Developed an application extension to streamline simple tasks in Jira for internal use.",
-            "techStackKeys": "REACT,TS"
-          }
-        ]
-      },
-      "AWSSAA": {
-        "year": "2023/06",
-        "title": "AWS Certified Solutions Architect - Associate - C03 Achievement",
-        "description": "Due to frequent engagement with AWS in my work, I obtained the AWS Certified Solutions Architect - Associate - C03 to deepen my expertise.",
-        "projectsCount": "0",
-        "projects": []
-      },
-      "PHILIPPINES": {
-        "year": "2022/09 ~ 2023/04",
-        "title": "Study Abroad in the Philippines",
-        "description": "I spent around 6 months in the Philippines to improve my language skills and experience a different culture.",
-        "projectsCount": "0",
-        "projects": []
-      },
-      "WINOO": {
-        "year": "2020/06 ~ 2022/08",
-        "title": "Winoo Co., Ltd.",
-        "description": "As a Full Stack Engineer, I worked on application development for various clients.",
-        "projectsCount": "2",
-        "projects": [
-          {
-            "title": "New Development of a Public Data Management Platform (DMP) Visualization Tool",
-            "year": "2020/06 ~ 2022/08",
-            "description": "Developed a Data Management Platform using various graphs to effectively utilize customer data for acquiring new customers and enhancing loyalty of existing ones.",
-            "techStackKeys": "VUE,TS,NODE,AWS"
-          },
-          {
-            "title": "Functional Enhancement of a Public Data Management Platform (DMP)",
-            "year": "2020/06 ~ 2020/07",
-            "description": "We have been developing a data management platform that utilizes various metrics to enable companies to effectively leverage their own customer data. This platform aims to contribute to the acquisition of new customers and the enhancement of loyalty among existing customers.",
-            "techStackKeys": "RUBY,RAILS,JS,AWS"
-          }
-        ]
-      },
-      "SELFSTUDY": {
-        "year": "2020/01 ~ 2020/05",
-        "title": "Self-Study Period for Application Development",
-        "description": "I spent time learning the fundamentals of web development and implementing complex features using Ruby on Rails and AWS.",
+      "SIGNITE": {
+        "year": "2024/02 ~",
+        "title": "Signite Inc.",
+        "description": "Worked as a frontend engineer, responsible for developing client applications.",
         "projectsCount": "1",
         "projects": [
           {
-            "title": "Technologies Learned",
-            "year": "2020/01 ~ 2020/05",
-            "description": "Focused intensively on learning the following technologies. At that time, I dedicated over 12 hours a day to study.",
-            "techStackKeys": "HTML,CSS,JS,TS,JQUERY,VUE,GIT,GITHUB,NODE,RUBY,RAILS,MYSQL,LINUX,DOCKER,AWS"
+            "title": "Travel & Tourism SNS Development",
+            "year": "2024/02 ~",
+            "description": "Handled frontend development for a travel and tourism industry SNS app, focusing on implementing additional features and optimizing for SEO.",
+            "techStackKeys": "TS,REACT,NEXT,RECOIL,TAIL"
+          }
+        ]
+      },
+      "TDC": {
+        "year": "2023/09 ~ 2024/09",
+        "title": "TDC Software Inc.",
+        "description": "As a Full Stack Engineer, I was involved in both in-house and client-based application development.",
+        "projectsCount": "3",
+        "projects": [
+          {
+            "title": "Development of Account Management App for Elementary and Junior High Schools",
+            "year": "2024/03 ~ 2024/09",
+            "description": "Responsible for frontend development of an account management app for elementary and junior high schools. The app addresses issues such as students forgetting passwords and the labor-intensive process of issuing accounts for new students, caused by individual accounts for multiple apps provided by the company.",
+            "techStackKeys": "TS,REACT,NEXT,RECOIL,MUI,VITEST,STORYBOOK,NODE,AWS"
+          },
+          {
+            "title": "New Development of Abnormal Equipment Detection App",
+            "year": "2023/09 ~ 2024/02",
+            "description": "Participated in the new development of an app that detects abnormalities in manufacturing systems within factories. Primarily responsible for frontend development and infrastructure setup. The app uses machine learning to analyze data such as equipment vibrations, detects abnormalities, and delivers notifications and dashboards to users.",
+            "techStackKeys": "TS,VUE,NUXT,PINIA,VUETIFY,PYTHON,FASTAPI,AWS"
+          },
+          {
+            "title": "Development of Internal Jira Extension App",
+            "year": "2023/09 ~ 2023/11",
+            "description": "Developed an internal app to enhance Jira's functionality, aimed at improving operational efficiency. Implemented features to reduce repetitive tasks, such as bulk backlog creation and template functionalities.",
+            "techStackKeys": "TS,REACT,TAIL"
+          }
+        ]
+      },
+      "WINOO": {
+        "year": "2020/06 ~ 2022/08",
+        "title": "Winoo Inc.",
+        "description": "As a Full Stack Engineer, I worked on application development for various clients.",
+        "projectsCount": "1",
+        "projects": [
+          {
+            "title": "Public DMP (Data Management Platform) Visualization Tool - New Development/Maintenance",
+            "year": "2020/06 ~ 2022/08",
+            "description": "Developed and maintained a data management platform that helps businesses effectively utilize their customer data to acquire new customers and enhance the loyalty of existing ones through various graphical tools. As a full-stack engineer, I was involved in frontend, backend, and infrastructure development.",
+            "techStackKeys": "TS,VUE,VUEX,VUETIFY,NODE,AWS"
           }
         ]
       }

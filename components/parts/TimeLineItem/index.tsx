@@ -35,8 +35,8 @@ export const TimeLineItem = ({
 
   const hoverShadowClass = isPc
     ? isDark
-      ? 'hover:shadow-[0_2px_4px_rgba(94,_234,_212,_0.7)]'
-      : 'hover:shadow-[0_2px_4px_rgba(77,_110,_212,_0.7)]'
+      ? 'hover:shadow-[0_3px_6px_rgba(94,_234,_212,_0.7)]'
+      : 'hover:shadow-[0_3px_6px_rgba(77,_110,_212,_0.7)]'
     : null
 
   const handleMouseEnter = () => {
@@ -54,7 +54,8 @@ export const TimeLineItem = ({
         isNotHovered && 'opacity-50',
         hoverShadowClass,
         'rounded-lg',
-        isPc && 'hover:bg-base-200'
+        isPc && 'hover:bg-base-100',
+        'pr-2'
       ]
         .filter(Boolean)
         .join(' ')}
@@ -67,7 +68,7 @@ export const TimeLineItem = ({
           <div className="h-4 w-4" />
         </div>
       </div>
-      <div className="space-y-2 timeline-start mb-12 px-2">
+      <div className="space-y-2 timeline-start mb-12 px-2 w-full">
         <time className="font-mono italic pb-1">{year}</time>
         <div className="text-2xl pb-1 text-secondary font-bold">{title}</div>
         <div className="pb-2">{description}</div>

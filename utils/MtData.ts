@@ -7,7 +7,7 @@ export const HEADER_MENU = [
   'header.nabs.contact'
 ]
 
-export const TIME_LINE_ITEM_KEYS = ['TDC', 'AWSSAA', 'PHILIPPINES', 'WINOO', 'SELFSTUDY']
+export const TIME_LINE_ITEM_KEYS = ['SIGNITE', 'TDC', 'WINOO']
 
 export const TECH_STACKS: { [key: string]: { name: string } } = {
   VUE: { name: 'Vue.js' },
@@ -31,7 +31,15 @@ export const TECH_STACKS: { [key: string]: { name: string } } = {
   MYSQL: { name: 'MySQL' },
   LINUX: { name: 'Linux' },
   DOCKER: { name: 'Docker' },
-  JS: { name: 'JavaScript' }
+  JS: { name: 'JavaScript' },
+  RECOIL: { name: 'Recoil' },
+  TAIL: { name: 'Tailwind CSS' },
+  MUI: { name: 'Material UI' },
+  VITEST: { name: 'Vitest' },
+  STORYBOOK: { name: 'Storybook' },
+  VUETIFY: { name: 'Vuetify' },
+  PINIA: { name: 'Pinia' },
+  VUEX: { name: 'Vuex' }
 }
 
 export const MAIL_ADDRESS = 'ni.000.000.000.011@gmail.com'

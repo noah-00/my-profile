@@ -13,7 +13,7 @@
     }
   },
   "top": {
-    "introduction-1": "フロントエンドの技術を中心に、約{{experienceYears}}年間Webアプリの開発に携わっております。",
+    "introduction-1": "React/Next.jsなどのフロントエンドの技術を中心に、約{{experienceYears}}年間Webアプリの開発に携わっております。",
     "introduction-2": "また、ServerlessFramework・Amplifyなどを用いた、AWSサービスとの連携も得意としております。",
     "resume": "職務経歴書"
   },
@@ -44,70 +44,57 @@
   "experience": {
     "viewResume": "経歴書をダウンロード",
     "items": {
-      "TDC": {
-        "year": "2023/09 ~ ",
-        "title": "TDCソフト 株式会社",
-        "description": "フルスタックエンジニアとして、自社向けのアプリ開発や、お客様から受注を受けてアプリ開発をさせて頂いております。",
-        "projectsCount": "2",
+      "SIGNITE": {
+        "year": "2024/02 ~",
+        "title": "株式会社シグナイト",
+        "description": "フロントエンドエンジニアとして、クライアントのアプリ開発を担当させて頂いておりました。",
+        "projectsCount": "1",
         "projects": [
           {
-            "title": "異常機器検知アプリ新規開発",
-            "year": "2023/09 ~",
-            "description": "製油所内の製造システムの異常を検知ができるアプリケーションの新規開発を、行っております。機械学習を用いて機器の振動などのデータの解析を行い異常を検知し、ユーザーに通知やダッシュボード配信を行うアプリです。",
-            "techStackKeys": "TS,NUXT,PYTHON,FASTAPI,AWS"
-          },
-          {
-            "title": "Jira拡張アプリ開発",
-            "year": "2023/09 ~ 2023/11",
-            "description": "社内向けに業務効率化を目的とした、Jiraの機能を拡張できるアプリを開発しておりました。バックログの一括作成や、バックログからテンプレートを作成など、Jira内の繰り返し作業を削減する事で効率化することを目的に開発をしておりました。",
-            "techStackKeys": "REACT,TS"
+            "title": "旅行・観光業 SNS 開発",
+            "year": "2024/02 ~",
+            "description": "旅行・観光業界向けのSNSアプリのフロントエンド開発を担当、追加機能の実装やSEO最適化などに取り組みました。",
+            "techStackKeys": "TS,REACT,NEXT,RECOIL,TAIL"
           }
         ]
       },
-      "AWSSAA": {
-        "year": "2023/06",
-        "title": "AWS SAA 取得",
-        "description": "業務でAWSに触れる機会が多く、知識を深めるためにAWS Certified Solutions Architect - Associate - C03を取得しました。",
-        "projectsCount": "0",
-        "projects": []
-      },
-      "PHILIPPINES": {
-        "year": "2022/09 ~ 2023/04",
-        "title": "フィリピン",
-        "description": "語学力向上・異文化に触れる事を目的にフィリピンに6ヶ月ほど留学をしていました。",
-        "projects": []
+      "TDC": {
+        "year": "2023/09 ~ 2024/09",
+        "title": "TDCソフト 株式会社",
+        "description": "フルスタックエンジニアとして、自社向けのアプリ開発や、クライアントから受注を受けてアプリ開発をさせて頂いておりました。",
+        "projectsCount": "3",
+        "projects": [
+          {
+            "title": "小中学校 アカウント管理アプリ 開発",
+            "year": "2024/03 ~ 2024/09",
+            "description": "小中学校向けのアカウント管理アプリのフロントエンド開発を担当しました。同社が提供する複数のアプリに個別のアカウントがあるため、生徒のパスワード忘れや新入生のアカウント発行の手間といった課題を解決するためのアプリです。",
+            "techStackKeys": "TS,REACT,NEXT,RECOIL,MUI,VITEST,STORYBOOK,NODE,AWS"
+          },
+          {
+            "title": "異常機器検知アプリ 新規開発",
+            "year": "2023/09 ~ 2024/02",
+            "description": "工場内の製造システムの異常を検知ができるアプリの新規開発に携わりました、主にフロントエンドの開発・インフラの構築を担当。機械学習を用いて機器の振動などのデータの解析を行い異常を検知し、ユーザーに通知やダッシュボード配信を行うアプリです。",
+            "techStackKeys": "TS,VUE,NUXT,PINIA,VUETIFY,PYTHON,FASTAPI,AWS"
+          },
+          {
+            "title": "社内向け Jira拡張アプリ 開発",
+            "year": "2023/09 ~ 2023/11",
+            "description": "社内の業務効率化を目的に、Jiraの機能を拡張するアプリを開発しました。バックログの一括作成やテンプレート化など、繰り返し作業を削減する機能を実装しました。",
+            "techStackKeys": "TS,REACT,TAIL"
+          }
+        ]
       },
       "WINOO": {
         "year": "2020/06 ~ 2022/08",
         "title": "Winoo株式会社",
-        "description": "フルスタックエンジニアとして、お客様から受注を受けて、アプリ開発をさせて頂いておりました。",
-        "projectsCount": "2",
-        "projects": [
-          {
-            "title": "パブリックDMP(データマネジメントプラットフォーム) ヴィジュアライズツール 新規開発",
-            "year": "2020/06 ~ 2022/08",
-            "description": "企業が自社の顧客データを効果的に活用し、新規顧客獲得や既存顧客のロイヤリティ向上に貢献するための、様々なグラフを用いたデータマネジメントプラットフォームを開発しておりました。",
-            "techStackKeys": "VUE,TS,NODE,AWS"
-          },
-          {
-            "title": "パブリックDMP(データマネジメントプラットフォーム) 機能改修",
-            "year": "2020/06 ~ 2020/07",
-            "description": "企業が自社の顧客データを効果的に活用し、新規顧客獲得や既存顧客のロイヤリティ向上に貢献するための、様々な数字を用いたデータマネジメントプラットフォームを開発しておりました。",
-            "techStackKeys": "RUBY,RAILS,JS,AWS"
-          }
-        ]
-      },
-      "SELFSTUDY": {
-        "year": "2020/01 ~ 2020/05",
-        "title": "アプリ開発独学期間",
-        "description": "Web開発に必要な基礎知識から、Ruby on RailsやAWSを用いた複合的機能の企画・実装を行いました。",
+        "description": "フルスタックエンジニアとして、クライアントのアプリ開発をさせて頂いておりました。",
         "projectsCount": "1",
         "projects": [
           {
-            "title": "学んだ技術",
-            "year": "2020/01 ~ 2020/05",
-            "description": "基礎知識〜下記の技術を集中的に学んでおりました。当時は、1日12時間以上は学習に充てていました。",
-            "techStackKeys": "HTML,CSS,JS,TS,JQUERY,VUE,GIT,GITHUB,NODE,RUBY,RAILS,MYSQL,LINUX,DOCKER,AWS"
+            "title": "パブリックDMP ヴィジュアライズツールアプリ 新規開発/保守",
+            "year": "2020/06 ~ 2022/08",
+            "description": "企業が自社の顧客データを効果的に活用し、新規顧客獲得や既存顧客のロイヤリティ向上に貢献するための、様々なグラフを用いたデータマネジメントプラットフォームの新規開発/保守しておりました。フルスタックエンジニアとして、フロントエンド・バックエンド・インフラに携わってきました。",
+            "techStackKeys": "TS,VUE,VUEX,VUETIFY,NODE,AWS"
           }
         ]
       }
