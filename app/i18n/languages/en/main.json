@@ -13,7 +13,7 @@
     }
   },
   "top": {
-    "introduction-1": "Frontend Developer with over {{experienceYears}} years of experience specializing in TypeScript, React, and Next.js.",
+    "introduction-1": "Frontend Developer with approximately {{experienceYears}} years of experience specializing in TypeScript, React, and Next.js.",
     "introduction-2": "Proficient in developing web applications and skilled at integrating AWS services using tools such as Serverless Framework and Amplify.",
     "resume": "resume"
   },

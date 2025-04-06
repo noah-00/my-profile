@@ -16,11 +16,14 @@ const aboutDataSet = ['languages', 'frameworks', 'others', 'certifications']
 
 const skillsData = {
   languages: [
-    { iconClass: 'i-vscode-icons-file-type-typescript-official', label: 'TypeScript' },
+    {
+      iconClass: 'i-vscode-icons-file-type-typescript-official',
+      label: 'TypeScript'
+    },
     { iconClass: 'i-vscode-icons-file-type-js-official', label: 'JavaScript' },
     { iconClass: 'i-vscode-icons-file-type-node', label: 'Node.js' },
-    { iconClass: 'i-vscode-icons-file-type-python', label: 'Python' },
-    { iconClass: 'i-vscode-icons-file-type-ruby', label: 'Ruby' }
+    { iconClass: 'i-vscode-icons-file-type-python', label: 'Python' }
+    // { iconClass: 'i-vscode-icons-file-type-ruby', label: 'Ruby' }
   ],
   frameworks: [
     { iconClass: 'i-vscode-icons-file-type-reactjs', label: 'React' },
@@ -28,9 +31,12 @@ const skillsData = {
     { iconClass: 'i-vscode-icons-file-type-next', label: 'Next.js' },
     { iconClass: 'i-vscode-icons-file-type-nuxt', label: 'Nuxt.js' },
     { iconClass: 'i-logos-express', label: 'Express.js' },
-    { iconClass: 'i-vscode-icons-file-type-rails', label: 'Ruby on Rails' },
+    // { iconClass: "i-vscode-icons-file-type-rails", label: "Ruby on Rails" },
     { iconClass: 'i-devicon-fastapi', label: 'FastAPI' },
-    { iconClass: 'i-vscode-icons-file-type-serverless', label: 'Serverless Framework' },
+    {
+      iconClass: 'i-vscode-icons-file-type-serverless',
+      label: 'Serverless Framework'
+    },
     { iconClass: 'i-devicon-redux', label: 'Redux' },
     { iconClass: 'i-logos-recoil', label: 'Recoil' },
     { iconClass: 'i-devicon-d3js', label: 'D3.js' },
@@ -40,11 +46,11 @@ const skillsData = {
   others: [
     { iconClass: 'i-devicon-amazonwebservices-wordmark', label: 'AWS' },
     { iconClass: 'i-logos-terraform-icon', label: 'Terraform' },
-    { iconClass: 'i-logos-docker-icon', label: 'Docker' },
+    // { iconClass: "i-logos-docker-icon", label: "Docker" },
     { iconClass: 'i-logos-github-octocat', label: 'Git / GitHub' },
     { iconClass: 'i-devicon-githubactions', label: 'GitHub Actions' },
     { iconClass: 'i-logos-bitbucket', label: 'Bitbucket' },
-    { iconClass: 'i-devicon-rspec', label: 'RSpec' },
+    // { iconClass: "i-devicon-rspec", label: "RSpec" },
     { iconClass: 'i-devicon-vitest', label: 'Vitest' },
     { iconClass: 'i-logos-jest', label: 'Jest' },
     { iconClass: 'i-logos-storybook-icon', label: 'Storybook' },
@@ -53,7 +59,8 @@ const skillsData = {
     { iconClass: 'i-logos-supabase-icon', label: 'Supabase' },
     { iconClass: 'i-logos-mongodb-icon', label: 'MongoDB' },
     { iconClass: 'i-logos-aws-dynamodb', label: 'DynamoDB' },
-    { iconClass: 'i-logos-mysql', label: 'MySQL' }
+    { iconClass: 'i-logos-mysql', label: 'MySQL' },
+    { iconClass: 'i-logos-postgresql', label: 'PostgreSQL' }
   ],
   certifications: [
     {
