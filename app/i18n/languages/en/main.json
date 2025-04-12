@@ -44,15 +44,29 @@
   "experience": {
     "viewResume": "Download the full resume",
     "items": {
+      "STUDYPOCKET": {
+        "year": "2025/01 ~",
+        "title": "StudyPocket Inc.",
+        "description": "Working as a full-stack engineer, responsible for the development of in-house products.",
+        "projectsCount": "1",
+        "projects": [
+          {
+            "title": "Generative AI Service for Educational Institutions",
+            "year": "2025/01 ~",
+            "description": "Mainly responsible for front-end development of a generative AI service for educational institutions. Worked on rebuilding the application, implementing a new admin dashboard, and optimizing API integration.",
+            "techStackKeys": "TS,REACT,NEXT,TAIL,JOTAI,PYTHON,FASTAPI"
+          }
+        ]
+      },
       "SIGNITE": {
-        "year": "2024/02 ~",
+        "year": "2024/02 ~ 2024/12",
         "title": "Signite Inc.",
         "description": "Worked as a frontend engineer, responsible for developing client applications.",
         "projectsCount": "1",
         "projects": [
           {
             "title": "Travel & Tourism SNS Development",
-            "year": "2024/02 ~",
+            "year": "2024/02 ~ 2024/12",
             "description": "Handled frontend development for a travel and tourism industry SNS app, focusing on implementing additional features and optimizing for SEO.",
             "techStackKeys": "TS,REACT,NEXT,RECOIL,TAIL"
           }

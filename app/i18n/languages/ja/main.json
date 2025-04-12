@@ -44,15 +44,29 @@
   "experience": {
     "viewResume": "経歴書をダウンロード",
     "items": {
+      "STUDYPOCKET": {
+        "year": "2025/01 ~",
+        "title": "スタディポケット株式会社",
+        "description": "フルスタックエンジニアとして、自社プロダクトの開発を担当",
+        "projectsCount": "1",
+        "projects": [
+          {
+            "title": "学校・教育機関向けの生成AIサービス 開発",
+            "year": "2025/01 ~",
+            "description": "教育機関向け生成AIサービスの、主にフロントエンド開発を担当。アプリの再構築・管理画面の新規実装・API連携の最適化などに取り組みました。",
+            "techStackKeys": "TS,REACT,NEXT,TAIL,JOTAI,PYTHON,FASTAPI"
+          }
+        ]
+      },
       "SIGNITE": {
-        "year": "2024/02 ~",
+        "year": "2024/02 ~ 2024/12",
         "title": "株式会社シグナイト",
-        "description": "フロントエンドエンジニアとして、クライアントのアプリ開発を担当させて頂いておりました。",
+        "description": "フロントエンドエンジニアとして、クライアントのアプリ開発を担当",
         "projectsCount": "1",
         "projects": [
           {
             "title": "旅行・観光業 SNS 開発",
-            "year": "2024/02 ~",
+            "year": "2024/02 ~ 2024/12",
             "description": "旅行・観光業界向けのSNSアプリのフロントエンド開発を担当、追加機能の実装やSEO最適化などに取り組みました。",
             "techStackKeys": "TS,REACT,NEXT,RECOIL,TAIL"
           }
@@ -61,7 +75,7 @@
       "TDC": {
         "year": "2023/09 ~ 2024/09",
         "title": "TDCソフト 株式会社",
-        "description": "フルスタックエンジニアとして、自社向けのアプリ開発や、クライアントから受注を受けてアプリ開発をさせて頂いておりました。",
+        "description": "フルスタックエンジニアとして、自社向けのアプリ開発や、クライアントから受注を受けてアプリ開発を担当",
         "projectsCount": "3",
         "projects": [
           {
@@ -87,7 +101,7 @@
       "WINOO": {
         "year": "2020/06 ~ 2022/08",
         "title": "Winoo株式会社",
-        "description": "フルスタックエンジニアとして、クライアントのアプリ開発をさせて頂いておりました。",
+        "description": "フルスタックエンジニアとして、クライアントのアプリ開発を担当",
         "projectsCount": "1",
         "projects": [
           {

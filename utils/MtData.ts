@@ -7,7 +7,7 @@ export const HEADER_MENU = [
   'header.nabs.contact'
 ]
 
-export const TIME_LINE_ITEM_KEYS = ['SIGNITE', 'TDC', 'WINOO']
+export const TIME_LINE_ITEM_KEYS = ['STUDYPOCKET', 'SIGNITE', 'TDC', 'WINOO']
 
 export const TECH_STACKS: { [key: string]: { name: string } } = {
   VUE: { name: 'Vue.js' },
@@ -33,6 +33,7 @@ export const TECH_STACKS: { [key: string]: { name: string } } = {
   DOCKER: { name: 'Docker' },
   JS: { name: 'JavaScript' },
   RECOIL: { name: 'Recoil' },
+  JOTAI: { name: 'Jotai' },
   TAIL: { name: 'Tailwind CSS' },
   MUI: { name: 'Material UI' },
   VITEST: { name: 'Vitest' },
