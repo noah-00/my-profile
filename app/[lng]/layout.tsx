@@ -38,7 +38,7 @@ type Props = {
 }
 export default function RootLayout({ children, params: { lng } }: Props) {
   return (
-    <html lang={lng} dir={dir(lng)}>
+    <html lang={lng} dir={dir(lng)} suppressHydrationWarning>
       <body className="font-mono">
         <Providers>
           <MotionCursorFollower>

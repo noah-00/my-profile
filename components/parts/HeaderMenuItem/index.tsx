@@ -30,12 +30,19 @@ export const HeaderMenuItem = (props: HeaderMenuItemProps) => {
   }
 
   return (
-    <li className="px-4">
+    <>
       <label htmlFor="my-drawer" className="hidden" ref={ref} />
-      <Scroll to={props.label} smooth={true} offset={-100} duration={600} onClick={closeDrawer}>
+      <Scroll
+        to={props.label}
+        smooth={true}
+        offset={-100}
+        duration={600}
+        onClick={closeDrawer}
+        href={`#${props.label}`}
+      >
         <span className="text-primary">0{props.index}.</span>
         {props.label}
       </Scroll>
-    </li>
+    </>
   )
 }

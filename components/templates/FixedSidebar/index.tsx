@@ -10,7 +10,7 @@ type Props = {
 
 export const FixedSidebar = (props: Props) => {
   return (
-    <div className="fixed left-16 bottom-0 space-y-4 hidden md:block">
+    <ul className="fixed left-16 bottom-0 space-y-4 hidden md:block">
       <MotionFadeInFromTop delay={1.5}>
         <div className="grid rounded place-content-center my-3">
           <a
@@ -51,6 +51,6 @@ export const FixedSidebar = (props: Props) => {
           <div className="w-[1px] h-20 bg-secondary" />
         </div>
       </MotionFadeInFromTop>
-    </div>
+    </ul>
   )
 }

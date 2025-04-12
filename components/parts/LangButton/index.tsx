@@ -17,12 +17,10 @@ export const LngButton = ({ lng }: LngButtonProps) => {
   return (
     <>
       <details>
-        <summary>
-          <button type="button" aria-label="Choose Language">
-            <span className="i-ion-language-sharp bg-primary" />
-          </button>
+        <summary className="flex items-center justify-center w-16 h-12">
+          <span className="i-ion-language-sharp bg-primary" />
         </summary>
-        <ul className="p-2 w-44 border-[1px] border-gray-700 bg-base-200">
+        <ul className="w-44 border-[1px] border-gray-700 bg-base-200 !mt-1">
           {Object.keys(labels).map((label) => {
             const isCurrentLang = lng === (label as keyof typeof labels)
 

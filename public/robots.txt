@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://noah-profile.vercel.app/sitemap.xml

@@ -32,9 +32,11 @@ export const Header = async ({ lng }: LngButtonProps) => {
         <ul className="menu menu-horizontal">
           {HEADER_MENU.map((item, index) => {
             return (
-              <MotionFadeInFromTop key={item} delay={index / 10}>
-                <HeaderMenuItem label={t(item)} index={index + 1} />
-              </MotionFadeInFromTop>
+              <li className="px-4" key={item}>
+                <MotionFadeInFromTop delay={index / 10}>
+                  <HeaderMenuItem label={t(item)} index={index + 1} />
+                </MotionFadeInFromTop>
+              </li>
             )
           })}
         </ul>
@@ -45,7 +47,7 @@ export const Header = async ({ lng }: LngButtonProps) => {
             <li className="justify-center hidden lg:flex">
               <LngButton lng={lng} />
             </li>
-            <div className="divider divider-horizontal hidden lg:flex"></div>
+            <div className="divider divider-horizontal hidden lg:flex" />
             <li>
               <ThemeSwitcher />
             </li>
