@@ -51,7 +51,7 @@
         "projectsCount": "1",
         "projects": [
           {
-            "title": "Generative AI Service for Educational Institutions",
+            "title": "Generative AI Service Development for Educational Institutions",
             "year": "2025/01 ~",
             "description": "Mainly responsible for front-end development of a generative AI service for educational institutions. Worked on rebuilding the application, implementing a new admin dashboard, and optimizing API integration.",
             "techStackKeys": "TS,REACT,NEXT,TAIL,JOTAI,PYTHON,FASTAPI"
