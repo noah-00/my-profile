@@ -14,7 +14,7 @@
   },
   "top": {
     "introduction-1": "React/Next.jsなどのフロントエンドの技術を中心に、約{{experienceYears}}年間Webアプリの開発に携わっております。",
-    "introduction-2": "また、ServerlessFramework・Amplifyなどを用いた、AWSサービスとの連携も得意としております。",
+    "introduction-2": "また、MCPサーバーを活用したデザインシステムの整備とAI連携により、UI開発の高速化・省力化に取り組んでいます",
     "resume": "職務経歴書"
   },
   "about": {
