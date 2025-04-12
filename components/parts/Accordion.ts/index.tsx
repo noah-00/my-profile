@@ -25,6 +25,7 @@ export const Accordion = (props: Props) => {
         name={`accordion-${props.organizationKey}-${props.index}`}
         checked={active}
         onChange={() => setActive(!active)}
+        aria-label="Accordion"
       />
       <div className="collapse-title text-xl font-medium text-secondary">{props.title}</div>
       <div className="collapse-content">
