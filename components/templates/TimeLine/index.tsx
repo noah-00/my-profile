@@ -14,9 +14,11 @@ type Props = {
 }
 
 export const TimeLine = (props: Props) => {
-  const { t } = useTranslation(props.lng, 'main')
+  const { t, isLoading } = useTranslation(props.lng, 'main')
 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
+
+  if (isLoading) return null
 
   return (
     <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical md:px-8">

@@ -1,6 +1,11 @@
 'use client'
 
-import { initReactI18next, useTranslation as useTranslationOrg } from 'react-i18next'
+import { useEffect, useState } from 'react'
+import {
+  type UseTranslationOptions,
+  initReactI18next,
+  useTranslation as useTranslationOrg
+} from 'react-i18next'
 
 import i18next from 'i18next'
 import resourcesToBackend from 'i18next-resources-to-backend'
@@ -16,7 +21,27 @@ i18next
   )
   .init(getOptions())
 
-export function useTranslation(lng: string, ns?: string, options: any = {}) {
-  if (i18next.resolvedLanguage !== lng) i18next.changeLanguage(lng)
-  return useTranslationOrg(ns, options)
+export function useTranslation(
+  lng: string,
+  ns?: string,
+  options?: UseTranslationOptions<undefined> | undefined
+) {
+  const [ready, setReady] = useState(i18next.resolvedLanguage === lng)
+
+  useEffect(() => {
+    if (i18next.resolvedLanguage !== lng) {
+      i18next.changeLanguage(lng).then(() => {
+        setReady(true)
+      })
+    } else {
+      setReady(true)
+    }
+  }, [lng])
+
+  const translation = useTranslationOrg(ns, options)
+
+  return {
+    ...translation,
+    isLoading: !ready
+  }
 }
