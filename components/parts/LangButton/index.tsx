@@ -34,9 +34,9 @@ export const LngButton = ({ lng }: LngButtonProps) => {
                     <div className="badge badge-sm badge-primary badge-outline mr-2 uppercase">
                       {label}
                     </div>
-                    <button type="button" className={`${isCurrentLang && 'underline'}`}>
+                    <span className={`${isCurrentLang && 'underline'}`}>
                       {labels[label as keyof typeof labels]}
-                    </button>
+                    </span>
                   </div>
                   {!isCurrentLang && (
                     <div className="i-ion-md-arrow-round-up bg-gray-500 rotate-45" />

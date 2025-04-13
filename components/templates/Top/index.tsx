@@ -1,7 +1,8 @@
 import Image from 'next/image'
 
-import { MotionFadeInFromBottom } from '@/components/motion/MotionFadeInFromBottom'
 import { DownloadPdfButton } from '@/components/parts/DownloadPdfButton'
+import { RenderImage } from '@/components/parts/RenderImage'
+import { RenderText } from '@/components/parts/RenderText'
 
 import { getTranslationInSSR } from '@/app/i18n/index'
 import myPicture from '@/public/images/me_1.png'
@@ -16,20 +17,9 @@ export const Top = async (props: TypeProps) => {
 
   const experienceYears = getExperienceYears()
 
-  const renderText = (delay: number, children: React.ReactNode, className?: string) => (
-    <MotionFadeInFromBottom delay={delay}>
-      <div className={className}>{children}</div>
-    </MotionFadeInFromBottom>
-  )
-
-  const renderImage = (delay: number, children: React.ReactNode) => (
-    <MotionFadeInFromBottom delay={delay}>{children}</MotionFadeInFromBottom>
-  )
-
   return (
     <div className="hero-content flex-col lg:flex-row-reverse lg:mt-24 lg:mb-20 mt-4 gap-6">
-      {renderImage(
-        0.4,
+      <RenderImage delay={0.4}>
         <Image
           src={myPicture}
           className="rounded-lg shadow-2xl max-w-[300px] md:max-w-[500px]"
@@ -37,25 +27,29 @@ export const Top = async (props: TypeProps) => {
           height={650}
           alt="Naoya Ishizaka"
         />
-      )}
+      </RenderImage>
       <div className="space-y-3">
-        {renderText(0.5, <p className="text-primary">Hi, my name is</p>)}
-        {renderText(
-          0.6,
+        <RenderText delay={0.5}>
+          <p className="text-primary">Hi, my name is</p>
+        </RenderText>
+        <RenderText delay={0.6}>
           <h1 className="lg:text-[70px] text-[50px] font-bold bg-gradient-to-r from-primary via-[#939393] to-[#e2e2e2] bg-clip-text text-transparent">
             Naoya Ishizaka
           </h1>
-        )}
-        {renderText(0.7, <h2 className="text-[30px] font-semibold">Frontend developer</h2>)}
-        {renderText(
-          0.8,
+        </RenderText>
+        <RenderText delay={0.7}>
+          <h2 className="text-[30px] font-semibold">Frontend developer</h2>
+        </RenderText>
+        <RenderText delay={0.8}>
           <p>
             {t('top.introduction-1', { experienceYears })}
             <br />
             {t('top.introduction-2')}
           </p>
-        )}
-        {renderText(0.9, <DownloadPdfButton content={t('top.resume')} lng={props.lng} />, 'pt-10')}
+        </RenderText>
+        <RenderText delay={0.9} className="pt-10">
+          <DownloadPdfButton content={t('top.resume')} lng={props.lng} />
+        </RenderText>
       </div>
     </div>
   )

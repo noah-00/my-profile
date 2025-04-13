@@ -82,10 +82,22 @@ export const PortfolioItem = (props: Props) => {
               })}
             </div>
             <div className="space-x-4">
-              <a className="link" href={props.github} target="_blank" rel="noreferrer">
+              <a
+                className="link"
+                href={props.github}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Link to GitHub"
+              >
                 <div className="h-7 w-7 hover:bg-primary i-ion-logo-github" />
               </a>
-              <a className="link" href={props.demo} target="_blank" rel="noreferrer">
+              <a
+                className="link"
+                href={props.demo}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Link to Demo"
+              >
                 <div className="h-7 w-7 hover:bg-primary i-clarity-pop-out-line" />
               </a>
             </div>
