@@ -43,6 +43,6 @@ export const TECH_STACKS: { [key: string]: { name: string } } = {
   VUEX: { name: 'Vuex' }
 }
 
-export const MAIL_ADDRESS = 'ni.000.000.000.011@gmail.com'
+export const MAIL_ADDRESS = 'naoya.ishizaka.tech@gmail.com'
 
 export const PROJECTS = [AnkiQuikcer]
