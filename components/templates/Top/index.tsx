@@ -20,13 +20,16 @@ export const Top = async (props: TypeProps) => {
   return (
     <div className="hero-content flex-col lg:flex-row-reverse lg:mt-24 lg:mb-20 mt-4 gap-6">
       <RenderImage delay={0.4}>
-        <Image
-          src={myPicture}
-          className="rounded-lg shadow-2xl max-w-[300px] md:max-w-[500px]"
-          width={650}
-          height={650}
-          alt="Naoya Ishizaka"
-        />
+        <div className="relative rounded-lg">
+          <div className="absolute inset-0 m-auto md:w-[300px] md:h-[300px] w-44 h-44 border-2 border-primary rounded-full pointer-events-none -z-10 shadow-[inset_0_0_30px,_0_0_30px] shadow-primary" />
+          <Image
+            src={myPicture}
+            className="max-w-[300px] md:max-w-[500px] z-10 rounded-lg"
+            width={650}
+            height={650}
+            alt="Naoya Ishizaka"
+          />
+        </div>
       </RenderImage>
       <div className="space-y-3">
         <RenderText delay={0.5}>
