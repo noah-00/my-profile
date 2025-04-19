@@ -105,7 +105,7 @@
         "projectsCount": "1",
         "projects": [
           {
-            "title": "Public DMP (Data Management Platform) Visualization Tool - New Development/Maintenance",
+            "title": "Public DMP (Data Management Platform) Visualization Tool - New Development / Maintenance",
             "year": "2020/06 ~ 2022/08",
             "description": "Developed and maintained a data management platform that helps businesses effectively utilize their customer data to acquire new customers and enhance the loyalty of existing ones through various graphical tools. As a full-stack engineer, I was involved in frontend, backend, and infrastructure development.",
             "techStackKeys": "TS,VUE,VUEX,VUETIFY,NODE,AWS"
