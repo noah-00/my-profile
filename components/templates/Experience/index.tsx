@@ -3,8 +3,8 @@ import { MoreLink } from '@/components/parts/MoreLink'
 import { SectionTitle } from '@/components/parts/SectionTitle'
 
 import { getTranslationInSSR } from '@/app/i18n'
-
 import { RESUME_FILE_NAME } from '@/utils/Const'
+
 import { TimeLine } from '../TimeLine'
 
 type Props = {

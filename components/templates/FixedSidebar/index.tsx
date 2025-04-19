@@ -3,6 +3,7 @@
 import React from 'react'
 
 import { MotionFadeInFromTop } from '@/components/motion/MotionFadeInFromTop'
+
 import { RESUME_FILE_NAME } from '@/utils/Const'
 
 type Props = {
