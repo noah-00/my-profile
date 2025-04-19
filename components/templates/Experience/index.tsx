@@ -4,6 +4,7 @@ import { SectionTitle } from '@/components/parts/SectionTitle'
 
 import { getTranslationInSSR } from '@/app/i18n'
 
+import { RESUME_FILE_NAME } from '@/utils/Const'
 import { TimeLine } from '../TimeLine'
 
 type Props = {
@@ -22,7 +23,7 @@ export const Experience = async (props: Props) => {
         <TimeLine lng={props.lng} />
       </MotionFadeInFromBottomWithScroll>
       <MotionFadeInFromBottomWithScroll>
-        <MoreLink href={`/resume_${props.lng}.pdf`} isATag>
+        <MoreLink href={`/resume_${props.lng}.pdf`} isATag download={RESUME_FILE_NAME}>
           {t('experience.viewResume')}
         </MoreLink>
       </MotionFadeInFromBottomWithScroll>

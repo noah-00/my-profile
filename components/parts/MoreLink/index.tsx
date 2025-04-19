@@ -1,4 +1,4 @@
-import React from 'react'
+import type React from 'react'
 
 import Link from 'next/link'
 
@@ -6,6 +6,7 @@ type Props = {
   href: string
   children: React.ReactNode
   isATag?: boolean
+  download?: string
 }
 
 export const MoreLink = (props: Props) => {
@@ -15,6 +16,7 @@ export const MoreLink = (props: Props) => {
         <a
           href={props.href}
           className="flex items-center space-x-2 pr-2 hover:pr-0 hover:space-x-4 hover:underline decoration-primary underline-offset-4"
+          download={props.download}
         >
           <span>{props.children}</span>
           <span className="i-ion-arrow-right-b"></span>

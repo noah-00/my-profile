@@ -1,3 +1,5 @@
+import { RESUME_FILE_NAME } from '@/utils/Const'
+
 type Props = {
   lng: string
 }
@@ -38,6 +40,7 @@ export const Footer = (props: Props) => {
             <a
               className="link"
               href={`/resume_${props.lng}.pdf`}
+              download={RESUME_FILE_NAME}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Link to Resume"

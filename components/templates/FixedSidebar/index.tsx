@@ -3,6 +3,7 @@
 import React from 'react'
 
 import { MotionFadeInFromTop } from '@/components/motion/MotionFadeInFromTop'
+import { RESUME_FILE_NAME } from '@/utils/Const'
 
 type Props = {
   lng: string
@@ -38,6 +39,7 @@ export const FixedSidebar = (props: Props) => {
           <a
             className="link"
             href={`/resume_${props.lng}.pdf`}
+            download={RESUME_FILE_NAME}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Resume"
