@@ -19,18 +19,18 @@
   "about": {
     "howIWork": {
       "label": "How I Work",
-      "intro": "I think of frontend as part of the product—not just tickets and components. I care whether flows make sense, whether the UI stays fast in real use, and whether the next developer can change things without fighting the codebase.",
+      "intro": "I think of frontend as part of the product — not just tickets and components. I care whether flows make sense, whether the UI holds up under real use, and whether the next developer can make changes without fighting the codebase.",
       "item1": {
-        "title": "Ideas when they move the needle",
-        "body": "If a tweak to copy, layout, or a step in the flow can reduce drop-off or support load, I’ll say so. The best work isn’t only “done”—it’s a bit better for users and the business than yesterday."
+        "title": "Speak up when it matters",
+        "body": "If a tweak to copy, layout, or a step in the flow can reduce drop-off or cut support load, I'll say so. Done isn't enough — the best work leaves things a bit better for users and the business than they were yesterday."
       },
       "item2": {
-        "title": "Performance you can feel",
-        "body": "I use DevTools, profiling, and lazy loading where it matters so pages don’t just look light in Figma—they feel responsive on real networks and devices."
+        "title": "Performance you can feel — not just promise",
+        "body": "I use DevTools, profiling, and lazy loading where it counts, so pages feel fast on real networks and real devices — not just in a design file."
       },
       "item3": {
-        "title": "Don’t design by vibes alone",
-        "body": "When UI choices are only “looks fine,” spacing and color drift between screens, and output can slide into generic patterns. I care about shared rules first—tokens, components, and a design system—so design and code stay aligned."
+        "title": "No vibes-only design",
+        "body": "When UI choices stop at \"looks fine,\" spacing and color drift between screens and output slides into generic. I'd rather start from shared rules — tokens, components, a design system — so design and code stay aligned."
       }
     },
     "information": {
