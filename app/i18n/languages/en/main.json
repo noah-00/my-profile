@@ -13,11 +13,26 @@
     }
   },
   "top": {
-    "introduction-1": "Frontend Developer with approximately {{experienceYears}} years of experience specializing in TypeScript, React, and Next.js.",
-    "introduction-2": "I am also working on streamlining and accelerating UI development by leveraging MCP servers to enhance our design system and integrate with AI tools.",
-    "resume": "resume"
+    "introduction-1": "Frontend Developer with {{experienceYears}} years of experience specializing in TypeScript, React, and Next.js.",
+    "introduction-2": "I develop products from the user's perspective, always thinking about how to improve UI and UX."
   },
   "about": {
+    "howIWork": {
+      "label": "How I Work",
+      "intro": "I think of frontend as part of the product—not just tickets and components. I care whether flows make sense, whether the UI stays fast in real use, and whether the next developer can change things without fighting the codebase.",
+      "item1": {
+        "title": "Ideas when they move the needle",
+        "body": "If a tweak to copy, layout, or a step in the flow can reduce drop-off or support load, I’ll say so. The best work isn’t only “done”—it’s a bit better for users and the business than yesterday."
+      },
+      "item2": {
+        "title": "Performance you can feel",
+        "body": "I use DevTools, profiling, and lazy loading where it matters so pages don’t just look light in Figma—they feel responsive on real networks and devices."
+      },
+      "item3": {
+        "title": "Don’t design by vibes alone",
+        "body": "When UI choices are only “looks fine,” spacing and color drift between screens, and output can slide into generic patterns. I care about shared rules first—tokens, components, and a design system—so design and code stay aligned."
+      }
+    },
     "information": {
       "skillsLabel": "Skills",
       "languagesLabel": "Programming Language",
@@ -42,24 +57,52 @@
     ]
   },
   "experience": {
-    "viewResume": "Download the full resume",
     "items": {
+      "MYMUSIC": {
+        "year": "2025/07 ~",
+        "location": "Vancouver, Canada",
+        "title": "my.music Ltd.",
+        "description": "Frontend Web Developer working on the .MUSIC domain platform.",
+        "projectsCount": "2",
+        "projects": [
+          {
+            "title": "Wix → Next.js Migration",
+            "year": "2025/07 ~",
+            "description": "Migrated multiple Wix-based websites to Next.js, reducing ongoing Wix subscription and platform costs while keeping sites maintainable. Built an SEO-friendly, reusable codebase designed for AI-assisted development to speed iteration and limit technical debt.",
+            "techStackKeys": "TS,REACT,NEXT,TAIL,NODE"
+          },
+          {
+            "title": "verify.music — KYB/KYC Verification Platform",
+            "year": "2026/01 ~",
+            "description": "Architected a standalone passwordless verification platform to decouple KYB/KYC authentication from the .MUSIC domain registration flow, replacing mandatory identity verification at signup with a one-year completion window to reduce abandonment. Designed and implemented the full front-end of a passwordless .MUSIC domain verification platform, independently selecting the tech stack and owning all UI/UX from ideation to production, improving onboarding by deferring mandatory KYC verification to a one-year window.",
+            "techStackKeys": "TS,REACT,NEXT,TAIL,NODE"
+          }
+        ]
+      },
       "STUDYPOCKET": {
         "year": "2025/01 ~",
+        "location": "Tokyo, Japan",
         "title": "StudyPocket Inc.",
         "description": "Working as a full-stack engineer, responsible for the development of in-house products.",
-        "projectsCount": "1",
+        "projectsCount": "2",
         "projects": [
+          {
+            "title": "StudyPocket AI English — Product Development",
+            "year": "2025/08 ~",
+            "description": "Leading front-end development for StudyPocket AI English, a school-facing English learning product. Building features across AI conversation, pronunciation practice, dictation, and composition writing to support speaking and writing skills.",
+            "techStackKeys": "TS,REACT,NEXT,TAIL,JOTAI,NODE"
+          },
           {
             "title": "Generative AI Service Development for Educational Institutions",
             "year": "2025/01 ~",
             "description": "Mainly responsible for front-end development of a generative AI service for educational institutions. Worked on rebuilding the application, implementing a new admin dashboard, and optimizing API integration.",
-            "techStackKeys": "TS,REACT,NEXT,TAIL,JOTAI,PYTHON,FASTAPI"
+            "techStackKeys": "TS,REACT,NEXT,TAIL,JOTAI,NODE"
           }
         ]
       },
       "SIGNITE": {
         "year": "2024/02 ~ 2024/12",
+        "location": "Tokyo, Japan",
         "title": "Signite Inc.",
         "description": "Worked as a frontend engineer, responsible for developing client applications.",
         "projectsCount": "1",
@@ -74,6 +117,7 @@
       },
       "TDC": {
         "year": "2023/09 ~ 2024/09",
+        "location": "Tokyo, Japan",
         "title": "TDC Software Inc.",
         "description": "As a Full Stack Engineer, I was involved in both in-house and client-based application development.",
         "projectsCount": "3",
@@ -100,6 +144,7 @@
       },
       "WINOO": {
         "year": "2020/06 ~ 2022/08",
+        "location": "Tokyo, Japan",
         "title": "Winoo Inc.",
         "description": "As a Full Stack Engineer, I worked on application development for various clients.",
         "projectsCount": "1",

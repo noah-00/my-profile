@@ -120,6 +120,23 @@ export const About = async (props: Props) => {
               </div>
 
               <div className="space-y-8">
+                <div className="grid lg:grid-cols-4 grid-cols-1">
+                  <div className="col-span-1 text-secondary mb-4 lg:mb-0 font-bold border-l-[4px] border-primary pl-5 items-center flex">
+                    {t('about.howIWork.label')}
+                  </div>
+                  <div className="col-span-3 space-y-5 text-sm sm:text-base leading-relaxed">
+                    <p>{t('about.howIWork.intro')}</p>
+                    {([1, 2, 3] as const).map((n) => (
+                      <div key={n}>
+                        <h4 className="font-semibold text-secondary mb-1">
+                          {t(`about.howIWork.item${n}.title`)}
+                        </h4>
+                        <p className="text-base-content/90">{t(`about.howIWork.item${n}.body`)}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
                 {aboutDataSet.map((data) => (
                   <div className="grid lg:grid-cols-4 grid-cols-1" key={data}>
                     <div className="col-span-1 text-secondary mb-4 lg:mb-0 font-bold border-l-[4px] border-primary pl-5 items-center flex">

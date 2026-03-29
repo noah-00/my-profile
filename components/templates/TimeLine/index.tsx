@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 
-import { Accordions } from '@/components/templates/Accordions.ts'
+// import { Accordions } from '@/components/templates/Accordions.ts'
 
 import { useTranslation } from '@/app/i18n/client'
 import { TIME_LINE_ITEM_KEYS } from '@/utils/MtData'
@@ -27,6 +27,7 @@ export const TimeLine = (props: Props) => {
           <TimeLineItem
             key={organizationKey}
             year={t(`experience.items.${organizationKey}.year`)}
+            location={t(`experience.items.${organizationKey}.location`)}
             title={t(`experience.items.${organizationKey}.title`)}
             index={index}
             description={t(`experience.items.${organizationKey}.description`)}
@@ -34,7 +35,9 @@ export const TimeLine = (props: Props) => {
             setHoveredIndex={setHoveredIndex}
             hoveredIndex={hoveredIndex}
           >
+            {/* Project detail items (e.g. Wix → Next.js, verify.music) — uncomment to show again
             <Accordions lng={props.lng} organizationKey={organizationKey} />
+            */}
           </TimeLineItem>
         )
       })}

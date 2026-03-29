@@ -8,6 +8,7 @@ import { THEME_DARK } from '@/utils/Const'
 type Props = {
   children: React.ReactNode
   year: string
+  location: string
   title: string
   index: number
   description: string
@@ -19,6 +20,7 @@ type Props = {
 export const TimeLineItem = ({
   children,
   year,
+  location,
   title,
   index,
   description,
@@ -71,6 +73,7 @@ export const TimeLineItem = ({
       <div className="space-y-2 timeline-start mb-12 px-2 w-full">
         <time className="font-mono italic pb-1">{year}</time>
         <div className="text-2xl pb-1 text-secondary font-bold">{title}</div>
+        <p className="text-sm text-secondary/90 font-mono tracking-wide pb-1">{location}</p>
         <div className="pb-2">{description}</div>
         <div className="pb-2">{children}</div>
       </div>

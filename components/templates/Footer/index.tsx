@@ -1,10 +1,4 @@
-import { RESUME_FILE_NAME } from '@/utils/Const'
-
-type Props = {
-  lng: string
-}
-
-export const Footer = (props: Props) => {
+export const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
@@ -34,18 +28,6 @@ export const Footer = (props: Props) => {
               aria-label="Link to GitHub"
             >
               <div className="h-6 w-6 bg-primary hover:bg-secondary i-ion-logo-github" />
-            </a>
-          </div>
-          <div className="grid rounded place-content-center">
-            <a
-              className="link"
-              href={`/resume_${props.lng}.pdf`}
-              download={RESUME_FILE_NAME}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Link to Resume"
-            >
-              <div className="h-6 w-6 bg-primary hover:bg-secondary i-ion-document-text" />
             </a>
           </div>
         </div>

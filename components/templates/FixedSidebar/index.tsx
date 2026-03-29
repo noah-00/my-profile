@@ -4,13 +4,7 @@ import React from 'react'
 
 import { MotionFadeInFromTop } from '@/components/motion/MotionFadeInFromTop'
 
-import { RESUME_FILE_NAME } from '@/utils/Const'
-
-type Props = {
-  lng: string
-}
-
-export const FixedSidebar = (props: Props) => {
+export const FixedSidebar = () => {
   return (
     <ul className="fixed left-16 bottom-0 space-y-4 hidden md:block">
       <MotionFadeInFromTop delay={1.5}>
@@ -34,18 +28,6 @@ export const FixedSidebar = (props: Props) => {
             aria-label="GitHub"
           >
             <div className="h-6 w-6 hover:bg-primary i-ion-logo-github" />
-          </a>
-        </div>
-        <div className="grid rounded place-content-center my-3">
-          <a
-            className="link"
-            href={`/resume_${props.lng}.pdf`}
-            download={RESUME_FILE_NAME}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Resume"
-          >
-            <div className="h-6 w-6 hover:bg-primary i-ion-document-text" />
           </a>
         </div>
       </MotionFadeInFromTop>

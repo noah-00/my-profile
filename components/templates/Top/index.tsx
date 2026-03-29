@@ -1,11 +1,11 @@
 import Image from 'next/image'
 
-import { DownloadPdfButton } from '@/components/parts/DownloadPdfButton'
 import { RenderImage } from '@/components/parts/RenderImage'
 import { RenderText } from '@/components/parts/RenderText'
 
 import { getTranslationInSSR } from '@/app/i18n/index'
 import myPicture from '@/public/images/me_1.png'
+import { MAIL_ADDRESS } from '@/utils/MtData'
 import { getExperienceYears } from '@/utils/Utils'
 
 type TypeProps = {
@@ -50,8 +50,14 @@ export const Top = async (props: TypeProps) => {
             {t('top.introduction-2')}
           </p>
         </RenderText>
-        <RenderText delay={0.9} className="pt-10">
-          <DownloadPdfButton content={t('top.resume')} lng={props.lng} />
+        <RenderText delay={0.9}>
+          <a
+            href={`mailto:${MAIL_ADDRESS}`}
+            className="btn btn-primary btn-outline shadow-[inset_0px_0px_8px_1px] shadow-primary mt-2"
+          >
+            <span className="h-4 w-4 i-ion-paper-airplane" aria-hidden />
+            {t('contact.button')}
+          </a>
         </RenderText>
       </div>
     </div>

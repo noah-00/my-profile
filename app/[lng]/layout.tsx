@@ -44,8 +44,8 @@ export default function RootLayout({ children, params: { lng } }: Props) {
           <MotionCursorFollower>
             <Header lng={lng} />
             {children}
-            <Footer lng={lng} />
-            <FixedSidebar lng={lng} />
+            <Footer />
+            <FixedSidebar />
           </MotionCursorFollower>
         </Providers>
       </body>
