@@ -80,7 +80,7 @@
         ]
       },
       "STUDYPOCKET": {
-        "year": "2025/01 ~",
+        "year": "2024/12 ~ 2026/05",
         "location": "東京、日本",
         "title": "スタディポケット株式会社",
         "description": "フルスタックエンジニアとして、自社プロダクトの開発を担当",
@@ -97,21 +97,6 @@
             "year": "2025/01 ~",
             "description": "教育機関向け生成AIサービスの、主にフロントエンド開発を担当。アプリの再構築・管理画面の新規実装・API連携の最適化などに取り組みました。",
             "techStackKeys": "TS,REACT,NEXT,TAIL,JOTAI,NODE"
-          }
-        ]
-      },
-      "SIGNITE": {
-        "year": "2024/02 ~ 2024/12",
-        "location": "東京、日本",
-        "title": "株式会社シグナイト",
-        "description": "フロントエンドエンジニアとして、クライアントのアプリ開発を担当",
-        "projectsCount": "1",
-        "projects": [
-          {
-            "title": "旅行・観光業 SNS 開発",
-            "year": "2024/02 ~ 2024/12",
-            "description": "旅行・観光業界向けのSNSアプリのフロントエンド開発を担当、追加機能の実装やSEO最適化などに取り組みました。",
-            "techStackKeys": "TS,REACT,NEXT,RECOIL,TAIL"
           }
         ]
       },
